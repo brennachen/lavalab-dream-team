@@ -6,7 +6,7 @@ import "./css/Home.css";
  * @returns Array of img elements
  */
 function addCompanyLogos() {
-    const companyLogosSrc = [require("./company_logos/airbnb_logo.png"), require("./company_logos/starbucks_logo.png"), require("./company_logos/target_logo.png"), require("./company_logos/airbnb_logo.png"), require("./company_logos/starbucks_logo.png"), require("./company_logos/target_logo.png")];
+    const companyLogosSrc = [require("./imgs/airbnb_logo.png"), require("./imgs/starbucks_logo.png"), require("./imgs/target_logo.png"), require("./imgs/airbnb_logo.png"), require("./imgs/starbucks_logo.png"), require("./imgs/target_logo.png")];
     var companyElements = [];
 
     for (var i = 0; i < companyLogosSrc.length; i++) {
@@ -30,9 +30,9 @@ function Home() {
 
     const companyElements = addCompanyLogos();
 
-    const whatWeDoIcons = [require("./company_logos/student_logo.png"), require("./company_logos/business_logo.png"), require("./company_logos/school_logo.png")];
+    const whatWeDoIcons = [require("./imgs/student_logo.png"), require("./imgs/business_logo.png"), require("./imgs/school_logo.png")];
 
-    const homePicture = require("./company_logos/home-overview.png");
+    const homePicture = require("./imgs/home-overview.png");
 
     return (
         <div className="home">
