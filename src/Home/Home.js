@@ -1,6 +1,21 @@
 import React, { useRef } from "react";
 import "./css/Home.css";
 
+/**
+ * Render company logos
+ * @returns Array of img elements
+ */
+function addCompanyLogos() {
+    const companyLogosSrc = [require("./company_logos/airbnb_logo.png"), require("./company_logos/starbucks_logo.png"), require("./company_logos/target_logo.png"), require("./company_logos/airbnb_logo.png"), require("./company_logos/starbucks_logo.png"), require("./company_logos/target_logo.png")];
+    var companyElements = [];
+
+    for (var i = 0; i < companyLogosSrc.length; i++) {
+        companyElements.push(<img src={companyLogosSrc[i]} alt="" className="aboutUs-content-img" />);
+    }
+
+    return companyElements;
+}
+
 function Home() {
 
     const overviewRef = useRef(null)
@@ -13,6 +28,12 @@ function Home() {
     const scrollToWhatWeDo = () => whatWeDoRef.current.scrollIntoView({ behavior: "smooth" })
     const scrollTohowItWorks = () => howItWorksRef.current.scrollIntoView({ behavior: "smooth" })
 
+    const companyElements = addCompanyLogos();
+
+    const whatWeDoIcons = [require("./company_logos/student_logo.png"), require("./company_logos/business_logo.png"), require("./company_logos/school_logo.png")];
+
+    const homePicture = require("./company_logos/home-overview.png");
+
     return (
         <div className="home">
 
@@ -20,9 +41,7 @@ function Home() {
                 <div className="home-navbar-logo">Clownfish</div>
 
                 <div className="home-navbar-tabs">
-                    <span onClick={scrollToOverview} className="home-navbar-tab">
-                        Overview
-                    </span>
+                    <span onClick={scrollToOverview} className="home-navbar-tab">Overview</span>
                     <span onClick={scrollToAboutUs} className="home-navbar-tab">About Us</span>
                     <span onClick={scrollToWhatWeDo} className="home-navbar-tab">What We Do</span>
                     <span onClick={scrollTohowItWorks} className="home-navbar-tab">How It Works</span>
@@ -52,22 +71,112 @@ function Home() {
                             </span>
                         </div>
                     </div>
-                    <img className="overview-right" src="../../public/home-overview.png" alt="" />
+                    <img className="overview-right" src={homePicture} alt="" />
                 </div>
-                <div className="aboutUs" style={{ height: 1500, paddingTop: 150 }} ref={aboutUsRef}>
+                <div className="aboutUs" ref={aboutUsRef}>
                     <div className="aboutUs-title">
                         TRUSTED BY OVER 1K+ COMPANIES
                     </div>
                     <div className="aboutUs-content">
-                        <div style={{ backgroundColor: "yellow", height: 50, width: 100}}></div>
-                        <div style={{ backgroundColor: "red", height: 50, width: 100}}></div>
-                        <div style={{ backgroundColor: "green", height: 50, width: 100}}></div>
-                        <div style={{ backgroundColor: "blue", height: 50, width: 100}}></div>
-                        <div style={{ backgroundColor: "gray", height: 50, width: 100}}></div>
+                        {companyElements}
                     </div>
                 </div>
-                <div style={{ height: 1500, paddingTop: 150 }} ref={whatWeDoRef}>What We Do</div>
-                <div style={{ height: 1500, paddingTop: 150 }} ref={howItWorksRef}>How It Works</div>
+                <div className="whatWeDo" ref={whatWeDoRef}>
+                    <div className="whatWeDo-sectionName">WHAT WE DO</div>
+                    <div className="whatWeDo-title">MAIN TEXT GOES HERE</div>
+                    <div className="whatWeDo-content">
+                        <div className="whatWeDo-content-item">
+                            <img className="whatWeDo-content-item-img" src={whatWeDoIcons[0]} alt="" />
+                            <div className="whatWeDo-content-item-title">For Students</div>
+                            <div className="whatWeDo-content-item-content">Subheader Text Will Go Here So Here is Some Filler Text</div>
+                        </div>
+                        <div className="whatWeDo-content-item">
+                            <img className="whatWeDo-content-item-img" src={whatWeDoIcons[1]} alt="" />
+                            <div className="whatWeDo-content-item-title">For Business</div>
+                            <div className="whatWeDo-content-item-content">Subheader Text Will Go Here So Here is Some Filler Text</div>
+                        </div>
+                        <div className="whatWeDo-content-item">
+                            <img className="whatWeDo-content-item-img" src={whatWeDoIcons[2]} alt="" />
+                            <div className="whatWeDo-content-item-title">For Schools</div>
+                            <div className="whatWeDo-content-item-content">Subheader Text Will Go Here So Here is Some Filler Text</div>
+                        </div>
+                    </div>
+                </div>
+                <div className="howItWorks" ref={howItWorksRef}>
+                    <div className="howItWorks-sectionName">How It Works</div>
+                    <div className="howItWorks-title">MAIN TEXT GOES HERE</div>
+                    <div className="howItWorks-content">
+                        <div className="howItWorks-content-item">
+                            <div className="howItWorks-content-item-text">
+                                <div className="howItWorks-content-item-left">
+                                    <div className="howItWorks-content-item-left-num"><span>1</span></div>
+                                    <div className="howItWorks-content-item-left-line"></div>
+                                </div>
+                                <div className="howItWorks-content-item-mid">
+                                    <div className="howItWorks-content-item-mid-title">Text goes here</div>
+                                    <div className="howItWorks-content-item-mid-content">Subheader Text Will Go Here So Here is Some Filler Text</div>
+                                </div>
+                            </div>
+                            <img className="howItWorks-content-item-img" src={homePicture} alt="" />
+                        </div>
+
+                        <div className="howItWorks-content-item">
+                            <div className="howItWorks-content-item-text">
+                                <div className="howItWorks-content-item-left">
+                                    <div className="howItWorks-content-item-left-num"><span>2</span></div>
+                                    <div className="howItWorks-content-item-left-line"></div>
+                                </div>
+                                <div className="howItWorks-content-item-mid">
+                                    <div className="howItWorks-content-item-mid-title">Text goes here</div>
+                                    <div className="howItWorks-content-item-mid-content">Subheader Text Will Go Here So Here is Some Filler Text</div>
+                                </div>
+                            </div>
+                            <img className="howItWorks-content-item-img" src={homePicture} alt="" />
+                        </div>
+
+                        <div className="howItWorks-content-item">
+                            <div className="howItWorks-content-item-text">
+                                <div className="howItWorks-content-item-left">
+                                    <div className="howItWorks-content-item-left-num"><span>3</span></div>
+                                    <div className="howItWorks-content-item-left-line"></div>
+                                </div>
+                                <div className="howItWorks-content-item-mid">
+                                    <div className="howItWorks-content-item-mid-title">Text goes here</div>
+                                    <div className="howItWorks-content-item-mid-content">Subheader Text Will Go Here So Here is Some Filler Text</div>
+                                </div>
+                            </div>
+                            <img className="howItWorks-content-item-img" src={homePicture} alt="" />
+                        </div>
+
+                        <div className="howItWorks-content-item">
+                            <div className="howItWorks-content-item-text">
+                                <div className="howItWorks-content-item-left">
+                                    <div className="howItWorks-content-item-left-num"><span>4</span></div>
+                                    <div className="howItWorks-content-item-left-line"></div>
+                                </div>
+                                <div className="howItWorks-content-item-mid">
+                                    <div className="howItWorks-content-item-mid-title">Text goes here</div>
+                                    <div className="howItWorks-content-item-mid-content">Subheader Text Will Go Here So Here is Some Filler Text</div>
+                                </div>
+                            </div>
+                            <img className="howItWorks-content-item-img" src={homePicture} alt="" />
+                        </div>
+
+                        <div className="howItWorks-content-item">
+                            <div className="howItWorks-content-item-text">
+                                <div className="howItWorks-content-item-left">
+                                    <div className="howItWorks-content-item-left-num"><span>5</span></div>
+                                    <div className="howItWorks-content-item-left-line" style={{backgroundColor: '#ffffff'}}></div>
+                                </div>
+                                <div className="howItWorks-content-item-mid">
+                                    <div className="howItWorks-content-item-mid-title">Text goes here</div>
+                                    <div className="howItWorks-content-item-mid-content">Subheader Text Will Go Here So Here is Some Filler Text</div>
+                                </div>
+                            </div>
+                            <img className="howItWorks-content-item-img" src={homePicture} alt="" />
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );

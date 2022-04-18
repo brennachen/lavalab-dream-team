@@ -9,6 +9,8 @@
         justify-content: space-between;
         align-items: center;
         position: fixed;
+        z-index: 1;
+        background-color: white;
     
         .home-navbar-logo {
             font-style: normal;
@@ -27,7 +29,7 @@
             .home-navbar-tab {
                 font-style: normal;
                 font-weight: 400;
-                font-size: 22px;
+                font-size: 20px;
                 line-height: 27px;
     
                 color: #000000;
@@ -51,11 +53,13 @@
 
 .overview {
     height: 400px;
-    width: 100%;
+    margin-left: 58px;
+    margin-right: 58px;
     padding-top: 150px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 
     .overview-left {
         width: 40%;
@@ -71,19 +75,20 @@
         .overview-left-subHeader {
             font-weight: 400;
             font-size: 30px;
-            line-height: 37px;
+            line-height: 40px;
             color: #000000;
             text-align: left;
-            margin-top: 20px;
+            margin-top: 30px;
         }
 
         .overview-left-content {
-            margin-top: 20px;
+            margin-top: 25px;
             width: 100%;
             text-align: left;
 
             .overview-left-content-signUp {
                 width: 50%;
+                height: 50px;
                 padding-top: 5px;
                 padding-bottom: 5px;
                 font-weight: 400;
@@ -92,6 +97,8 @@
                 text-align: center;
                 color: #ffffff;
                 background-color: #FF7124;
+                border-radius: 10px;
+                border: none;
             }
             
             .overview-left-content-text {
@@ -111,26 +118,193 @@
 }
 
 .aboutUs {
-    height: 200px;
-    width: 100%;
+    margin-left: 58px;
+    margin-right: 58px;
     padding-top: 150px;
 
     .aboutUs-title {
         font-weight: 700;
-        font-size: 30px;
+        font-size: 25px;
         line-height: 37px;
         color: #000000;
         background-color: #F7F7F7;
-        padding-top: 20px;
+        padding-top: 40px;
     }
 
     .aboutUs-content {
-        width: 100%;
         height: 100px;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        padding-top: 40px;
+        justify-content: space-between;
+        padding-top: 80px;
+        padding-bottom: 60px;
         background-color: #F7F7F7;
+        overflow-x: scroll;
+
+        .aboutUs-content-img {
+            margin-left: 40px;
+            margin-right: 40px;
+            pointer-events: none;
+        }
+    }
+}
+
+.whatWeDo {
+    margin-left: 58px;
+    margin-right: 58px;
+    padding-top: 150px;
+
+    .whatWeDo-sectionName {
+        color: #2B4F4A;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 37px;
+        text-align: center;
+    }
+
+    .whatWeDo-title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 61px;
+        text-align: center;
+        color: #000000;
+        margin-top: 20px;
+    }
+
+    .whatWeDo-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 20px;
+
+        .whatWeDo-content-item {
+            text-align: left;
+            width: 300px;
+            margin-top: 40px;
+
+            .whatWeDo-content-item-img {
+                width: 60px;
+                height: 60px;
+            }
+
+            .whatWeDo-content-item-title {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 37px;
+                color: #000000;
+                margin-top: 15px;
+            }
+
+            .whatWeDo-content-item-content {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 27px;
+                color: #000000;
+                margin-top: 15px;
+            }
+        }
+    }
+
+}
+
+.howItWorks {
+    margin-left: 70px;
+    margin-right: 70px;
+    padding-top: 150px;
+    margin-bottom: 200px;
+
+    .howItWorks-sectionName {
+        color: #2B4F4A;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 37px;
+        text-align: center;
+    }
+
+    .howItWorks-title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 61px;
+        text-align: center;
+        color: #000000;
+        margin-top: 20px;
+    }
+
+    .howItWorks-content {
+        margin-top: 40px;
+        .howItWorks-content-item {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            .howItWorks-content-item-text {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .howItWorks-content-item-left {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+
+                .howItWorks-content-item-left-num {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    color: #FFFFFF;
+                    background-color: #2B4F4A;
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50px;
+                }
+                .howItWorks-content-item-left-line {
+                    width: 3px;
+                    height: 200px;
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                    background-color: #2B4F4A;
+                }
+            }
+
+            .howItWorks-content-item-mid {
+                text-align: left;
+                margin-left: 40px;
+                width: 300px;
+                padding-top: 8px;
+                
+                .howItWorks-content-item-mid-title {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 25px;
+                    line-height: 37px;
+                    color: #000000;
+                }
+
+                .howItWorks-content-item-mid-content {
+                    margin-top: 15px;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 27px;
+                    color: #000000;
+                }
+            }
+
+            .howItWorks-content-item-img {
+                width: 300px;
+                height: 200px;
+                align-self: center;
+            }
+        }
     }
 }
