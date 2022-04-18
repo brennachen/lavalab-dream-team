@@ -73,6 +73,7 @@ function Home() {
                     </div>
                     <img className="overview-right" src={homePicture} alt="" />
                 </div>
+                
                 <div className="aboutUs" ref={aboutUsRef}>
                     <div className="aboutUs-title">
                         TRUSTED BY OVER 1K+ COMPANIES
