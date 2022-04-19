@@ -2,6 +2,7 @@ import './GeneralSignUp.css';
 import React, { useState } from 'react';
 import Clownfish from "../img/clownfish-img.png";
 import ClownfishText from "../img/clownfish-text.png";
+import StudentSignUp from './StudentSignUp';
 
 function GeneralSignUp() {
     return (
@@ -17,6 +18,7 @@ function GeneralSignUp() {
                     <button className="button">Student Account</button>
                     <h5>or</h5>
                     <button className="button">Business Account</button>
+                    <h6 className="login">Already have an account? <span className="signin_link">Sign in</span> </h6>
                 </div>
             </div>
             <div className="bottomPane">

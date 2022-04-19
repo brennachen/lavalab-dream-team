@@ -34,7 +34,7 @@ function StudentSignUp() {
         </div>
         <div className="bottomPane">
             <div className="rightCorner">
-                <h6>Already have an account? <span className="signin_link">Sign up</span> </h6>
+                <h6>Not a student? <span className="signin_link">Previous</span> </h6>
             </div>
             <div className="rightText">
                 <h1 className="title">TELL US ABOUT YOURSELF</h1>
