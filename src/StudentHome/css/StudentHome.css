@@ -46,12 +46,14 @@
 }
 .studentHome .studentHome-content {
   padding-top: 150px;
+}
+.studentHome .studentHome-content .studentHome-search {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
 }
-.studentHome .studentHome-content .studentHome-search-left {
+.studentHome .studentHome-content .studentHome-search .studentHome-search-left {
   font-style: normal;
   font-weight: 700;
   font-size: 50px;
@@ -59,7 +61,7 @@
   color: #000000;
   text-align: left;
 }
-.studentHome .studentHome-content .studentHome-search-left .studentHome-search-box {
+.studentHome .studentHome-content .studentHome-search .studentHome-search-left .studentHome-search-box {
   width: 300px;
   height: 40px;
   border: 0.5px solid #000000;
@@ -68,7 +70,7 @@
   font-weight: 400;
   font-size: 12px;
 }
-.studentHome .studentHome-content .studentHome-search-left .studentHome-search-button {
+.studentHome .studentHome-content .studentHome-search .studentHome-search-left .studentHome-search-button {
   background-color: #FF7124;
   border: none;
   color: #ffffff;
@@ -81,6 +83,74 @@
   font-size: 12px;
   text-align: center;
 }
-.studentHome .studentHome-content .studentHome-search-right {
+.studentHome .studentHome-content .studentHome-search .studentHome-search-right {
   width: 50%;
+}
+.studentHome .studentHome-project {
+  padding-top: 150px;
+}
+.studentHome .studentHome-project .studentHome-project-title {
+  color: #2B4F4A;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 37px;
+  text-align: center;
+}
+.studentHome .studentHome-project .studentHome-project-subTitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 61px;
+  text-align: center;
+  color: #000000;
+  margin-top: 20px;
+}
+.studentHome .studentHome-project .studentHome-project-categoriesBar {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 27px;
+  text-align: center;
+  color: #000000;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 50px;
+  list-style-type: none;
+}
+.studentHome .studentHome-project .studentHome-project-projectShow {
+  display: flex;
+  flex-direction: column;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.studentHome .studentHome-project .studentHome-project-projectShow .studentHome-project-projectShow-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+.studentHome .studentHome-project .studentHome-project-projectShow .studentHome-project-projectShow-line .studentHome-project-projectShow-item {
+  text-align: left;
+  width: 300px;
+}
+.studentHome .studentHome-project .studentHome-project-projectShow .studentHome-project-projectShow-line .studentHome-project-projectShow-item .studentHome-project-projectShow-item-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 37px;
+  color: #000000;
+}
+.studentHome .studentHome-project .studentHome-project-projectShow .studentHome-project-projectShow-line .studentHome-project-projectShow-item .studentHome-project-projectShow-item-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 27px;
+  color: #000000;
+}
+.studentHome .studentHome-project .studentHome-project-projectShow .studentHome-project-projectShow-line .studentHome-project-projectShow-item .studentHome-project-projectShow-item-pic {
+  width: 90px;
+  height: 90px;
 }

@@ -1,8 +1,8 @@
 .home {
-    margin-left: 58px;
-    margin-right: 58px;
     .home-navbar{
-        width: 100%;
+        right: 50px;
+        left: 50px;
+
         height: 100px;
         display: flex;
         flex-direction: row;
@@ -13,23 +13,24 @@
         background-color: white;
     
         .home-navbar-logo {
+            font-family: 'Raleway', sans-serif;
             font-style: normal;
-            font-weight: 700;
-            font-size: 35px;
+            font-weight: 900;
+            font-size: 30px;
             line-height: 43px;
-            color: #000000;
+            color: #2A4645;
         }
     
         .home-navbar-tabs {
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
-            width: 50%;
+            width: 550px;
     
             .home-navbar-tab {
                 font-style: normal;
-                font-weight: 400;
-                font-size: 20px;
+                font-weight: 500;
+                font-size: 16px;
                 line-height: 27px;
     
                 color: #000000;
@@ -38,14 +39,31 @@
         }
     
         .home-navbar-signin {
-            width: 25%;
             display: flex;
             flex-direction: row;
             justify-content: center;
             right: 0;
+            font-weight: 800;
+            align-items: center;
             
             .home-navbar-login {
                 margin-right: 20px;
+            }
+
+            .home-navbar-signin {
+                background: #D96F03;
+                border-radius: 6px;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                text-align: center;
+                letter-spacing: 0.374px;
+                color: #FFFFFF;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+                width: fit-content;
             }
         }
     }
@@ -53,8 +71,8 @@
 
 .overview {
     height: 400px;
-    margin-left: 58px;
-    margin-right: 58px;
+    margin-left: 50px;
+    margin-right: 50px;
     padding-top: 150px;
     display: flex;
     flex-direction: row;
@@ -64,50 +82,40 @@
     .overview-left {
         width: 40%;
         .overview-left-header {
+            font-family: 'Raleway', sans-serif;
             font-style: normal;
-            font-weight: 700;
+            font-weight: 900;
             font-size: 60px;
-            line-height: 74px;
             color: #000000;
             text-align: left;
+            line-height: -30px;
         }
 
         .overview-left-subHeader {
-            font-weight: 400;
-            font-size: 30px;
-            line-height: 40px;
+            font-weight: 600;
+            font-size: 20px;
             color: #000000;
             text-align: left;
             margin-top: 30px;
         }
 
         .overview-left-content {
-            margin-top: 25px;
+            margin-top: 30px;
             width: 100%;
             text-align: left;
 
             .overview-left-content-signUp {
-                width: 50%;
-                height: 50px;
-                padding-top: 5px;
-                padding-bottom: 5px;
-                font-weight: 400;
-                font-size: 22px;
-                line-height: 27px;
+                width: 180px;
+                height: 40px;
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
                 text-align: center;
                 color: #ffffff;
-                background-color: #FF7124;
-                border-radius: 10px;
+                background: #D96F03;
+                border-radius: 6px;
                 border: none;
-            }
-            
-            .overview-left-content-text {
-                font-weight: 400;
-                font-size: 22px;
-                line-height: 27px;
-                text-align: center;
-                color: #000000;
-                margin-left: 20px;
             }
         }
     }
