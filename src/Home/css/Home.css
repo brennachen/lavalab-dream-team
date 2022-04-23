@@ -1,6 +1,8 @@
 .home .home-navbar {
-  right: 50px;
-  left: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+  left: 0px;
+  right: 0px;
   height: 100px;
   display: flex;
   flex-direction: row;
@@ -10,6 +12,11 @@
   z-index: 1;
   background-color: white;
 }
+.home .home-navbar .home-navbar-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 .home .home-navbar .home-navbar-logo {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
@@ -17,6 +24,11 @@
   font-size: 30px;
   line-height: 43px;
   color: #2A4645;
+}
+.home .home-navbar .home-navbar-logo-img {
+  padding-top: 3px;
+  margin-left: 5px;
+  width: 40px;
 }
 .home .home-navbar .home-navbar-tabs {
   display: flex;
@@ -26,9 +38,10 @@
 }
 .home .home-navbar .home-navbar-tabs .home-navbar-tab {
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   line-height: 27px;
+  letter-spacing: 0.374px;
   color: #000000;
   text-decoration: none;
 }
@@ -42,6 +55,12 @@
 }
 .home .home-navbar .home-navbar-signin .home-navbar-login {
   margin-right: 20px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.374px;
+  color: #2A4645;
 }
 .home .home-navbar .home-navbar-signin .home-navbar-signin {
   background: #D96F03;
@@ -79,6 +98,7 @@
   color: #000000;
   text-align: left;
   line-height: -30px;
+  letter-spacing: 0.374px;
 }
 .overview .overview-left .overview-left-subHeader {
   font-weight: 600;
@@ -105,8 +125,29 @@
   border-radius: 6px;
   border: none;
 }
+.overview .overview-pic {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+  margin-right: 60px;
+}
 .overview .overview-right {
-  width: 50%;
+  width: 250px;
+  height: 250px;
+  align-self: flex-end;
+}
+.overview .overview-mid {
+  width: 250px;
+  height: 250px;
+  align-self: flex-start;
+}
+.overview .overview-mid-arrow {
+  width: 200px;
+  margin-top: -20px;
+  margin-right: -100px;
+  align-self: flex-start;
 }
 .aboutUs {
   margin-left: 58px;
@@ -137,57 +178,149 @@
   pointer-events: none;
 }
 .whatWeDo {
-  margin-left: 58px;
-  margin-right: 58px;
   padding-top: 150px;
 }
 .whatWeDo .whatWeDo-sectionName {
-  color: #2B4F4A;
+  font-family: 'Mulish', sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 25px;
   line-height: 37px;
+  color: #D96F03;
   text-align: center;
 }
 .whatWeDo .whatWeDo-title {
+  margin-top: 10px;
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
-  line-height: 61px;
+  letter-spacing: 1px;
+  line-height: 59px;
   text-align: center;
-  color: #000000;
-  margin-top: 20px;
+  color: #2B4F4A;
 }
 .whatWeDo .whatWeDo-content {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 20px;
+  justify-content: space-between;
+  padding-left: 70px;
+  padding-right: 70px;
+  margin-top: 40px;
+  background: #F0F5F5;
+  padding-bottom: 50px;
 }
 .whatWeDo .whatWeDo-content .whatWeDo-content-item {
   text-align: left;
-  width: 300px;
-  margin-top: 40px;
+  width: 350px;
+  margin-top: 50px;
 }
 .whatWeDo .whatWeDo-content .whatWeDo-content-item .whatWeDo-content-item-img {
-  width: 60px;
-  height: 60px;
+  height: 40px;
 }
 .whatWeDo .whatWeDo-content .whatWeDo-content-item .whatWeDo-content-item-title {
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 37px;
+  line-height: 32px;
+  letter-spacing: 0.374px;
   color: #000000;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 .whatWeDo .whatWeDo-content .whatWeDo-content-item .whatWeDo-content-item-content {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+  margin-top: 10px;
+}
+.home .project {
+  padding-top: 150px;
+}
+.home .project .project-title {
+  font-family: 'Mulish', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 37px;
+  color: #D96F03;
+  text-align: center;
+}
+.home .project .project-subTitle {
+  margin-top: 10px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: 1px;
+  line-height: 59px;
+  text-align: center;
+  color: #2B4F4A;
+}
+.home .project .project-categoriesBar {
+  font-family: 'Mulish', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 27px;
   color: #000000;
-  margin-top: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  text-align: center;
+  width: 900px;
+  margin: auto;
+  margin-top: 40px;
+}
+.home .project .project-categoriesBar-more {
+  font-family: 'Mulish', sans-serif;
+  text-decoration-line: underline;
+  color: #D96F03;
+}
+.home .project .project-samples {
+  margin-top: 50px;
+  text-align: left;
+  margin-bottom: 50px;
+  margin-right: 30px;
+  margin-left: 0px;
+  overflow-x: scroll;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  height: 200px;
+}
+.home .project .project-samples .project-samples-item {
+  width: 350px;
+  height: 150px;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  margin-left: 50px;
+  padding: 20px;
+}
+.home .project .project-samples .project-samples-item .project-samples-item-img {
+  width: 60px;
+}
+.home .project .project-samples .project-samples-item .project-samples-item-title {
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 20px;
+  margin-top: 8px;
+  font-family: 'Mulish', sans-serif;
+  color: #2A4645;
+}
+.home .project .project-samples .project-samples-item .project-samples-item-text {
+  margin-top: 8px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  font-family: 'Mulish', sans-serif;
+  color: #000000;
 }
 .howItWorks {
   margin-left: 70px;

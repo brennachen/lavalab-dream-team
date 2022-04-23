@@ -1,7 +1,9 @@
 .home {
-    .home-navbar{
-        right: 50px;
-        left: 50px;
+    .home-navbar {
+        padding-right: 50px;
+        padding-left: 50px;
+        left: 0px;
+        right: 0px;
 
         height: 100px;
         display: flex;
@@ -11,7 +13,13 @@
         position: fixed;
         z-index: 1;
         background-color: white;
-    
+
+        .home-navbar-left {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
         .home-navbar-logo {
             font-family: 'Raleway', sans-serif;
             font-style: normal;
@@ -20,24 +28,30 @@
             line-height: 43px;
             color: #2A4645;
         }
-    
+        
+        .home-navbar-logo-img {
+            padding-top: 3px;
+            margin-left: 5px;
+            width: 40px;
+        }
+
         .home-navbar-tabs {
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
             width: 550px;
-    
+
             .home-navbar-tab {
                 font-style: normal;
-                font-weight: 500;
+                font-weight: 600;
                 font-size: 16px;
                 line-height: 27px;
-    
+                letter-spacing: 0.374px;
                 color: #000000;
                 text-decoration: none;
             }
         }
-    
+
         .home-navbar-signin {
             display: flex;
             flex-direction: row;
@@ -45,9 +59,15 @@
             right: 0;
             font-weight: 800;
             align-items: center;
-            
+
             .home-navbar-login {
                 margin-right: 20px;
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                letter-spacing: 0.374px;
+                color: #2A4645;
             }
 
             .home-navbar-signin {
@@ -81,6 +101,7 @@
 
     .overview-left {
         width: 40%;
+
         .overview-left-header {
             font-family: 'Raleway', sans-serif;
             font-style: normal;
@@ -89,6 +110,7 @@
             color: #000000;
             text-align: left;
             line-height: -30px;
+            letter-spacing: 0.374px;
         }
 
         .overview-left-subHeader {
@@ -120,8 +142,32 @@
         }
     }
 
+    .overview-pic {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100%;
+        align-items: center;
+        margin-right: 60px;
+    }
+
     .overview-right {
-        width: 50%;
+        width: 250px;
+        height: 250px; 
+        align-self: flex-end;
+    }
+    
+    .overview-mid {
+        width: 250px;
+        height: 250px; 
+        align-self: flex-start;
+    }
+
+    .overview-mid-arrow {
+        width: 200px;
+        margin-top: -20px;
+        margin-right: -100px;
+        align-self: flex-start;
     }
 }
 
@@ -158,65 +204,167 @@
 }
 
 .whatWeDo {
-    margin-left: 58px;
-    margin-right: 58px;
     padding-top: 150px;
 
     .whatWeDo-sectionName {
-        color: #2B4F4A;
+        font-family: 'Mulish', sans-serif;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 500;
         font-size: 25px;
         line-height: 37px;
+        text-align: center;
+        color: #D96F03;
         text-align: center;
     }
 
     .whatWeDo-title {
+        margin-top: 10px;
+        font-family: 'Raleway';
         font-style: normal;
         font-weight: 700;
         font-size: 40px;
-        line-height: 61px;
+        letter-spacing: 1px;
+        line-height: 59px;
         text-align: center;
-        color: #000000;
-        margin-top: 20px;
+        color: #2B4F4A;
     }
 
     .whatWeDo-content {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
-        margin-top: 20px;
+        justify-content: space-between;
+        padding-left: 70px;
+        padding-right: 70px;
+        margin-top: 40px;
+        background: #F0F5F5;
+        padding-bottom: 50px;
 
         .whatWeDo-content-item {
             text-align: left;
-            width: 300px;
-            margin-top: 40px;
+            width: 350px;
+            margin-top: 50px;
 
             .whatWeDo-content-item-img {
-                width: 60px;
-                height: 60px;
+                height: 40px;
             }
 
             .whatWeDo-content-item-title {
+                font-family: 'Raleway';
                 font-style: normal;
                 font-weight: 700;
                 font-size: 20px;
-                line-height: 37px;
+                line-height: 32px;
+                letter-spacing: 0.374px;
                 color: #000000;
-                margin-top: 15px;
+                margin-top: 20px;
             }
 
             .whatWeDo-content-item-content {
                 font-style: normal;
                 font-weight: 400;
                 font-size: 18px;
-                line-height: 27px;
+                line-height: 25px;
                 color: #000000;
-                margin-top: 15px;
+                margin-top: 10px;
             }
         }
     }
 
+}
+
+.home .project {
+    padding-top: 150px;
+
+    .project-title {
+        font-family: 'Mulish', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 37px;
+        text-align: center;
+        color: #D96F03;
+        text-align: center;
+    }
+
+    .project-subTitle {
+        margin-top: 10px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        letter-spacing: 1px;
+        line-height: 59px;
+        text-align: center;
+        color: #2B4F4A;
+    }
+    
+    .project-categoriesBar {
+        font-family: 'Mulish', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        text-align: center;
+        color: #000000;
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+        text-align: center;
+        width: 900px;
+        margin: auto;
+        margin-top: 40px;
+    }
+
+    .project-categoriesBar-more {
+        font-family: 'Mulish', sans-serif;
+        text-decoration-line: underline;
+        color: #D96F03;
+    }
+
+
+    .project-samples {
+        margin-top: 50px;
+        text-align: left;
+        margin-bottom: 50px;
+        margin-right: 30px;
+        margin-left: 0px;
+        overflow-x: scroll;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 20px;
+        padding-right: 20px;
+        height: 200px;
+        .project-samples-item {
+            width: 350px;
+            height: 150px;
+            background: #FFFFFF;
+            box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.15);
+            border-radius: 6px;
+            margin-left: 50px;
+            padding:20px;
+            .project-samples-item-img {
+                width: 60px;
+            }
+            .project-samples-item-title {
+                font-style: normal;
+                font-weight: 1000;
+                font-size: 20px;
+                margin-top: 8px;
+                font-family: 'Mulish', sans-serif;
+                color: #2A4645;
+            }
+            .project-samples-item-text {
+                margin-top: 8px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                font-family: 'Mulish', sans-serif;
+                color: #000000;
+            }
+        }
+    }
 }
 
 .howItWorks {
@@ -246,6 +394,7 @@
 
     .howItWorks-content {
         margin-top: 40px;
+
         .howItWorks-content-item {
             display: flex;
             flex-direction: row;
@@ -275,6 +424,7 @@
                     align-items: center;
                     border-radius: 50px;
                 }
+
                 .howItWorks-content-item-left-line {
                     width: 3px;
                     height: 200px;
@@ -289,7 +439,7 @@
                 margin-left: 40px;
                 width: 300px;
                 padding-top: 8px;
-                
+
                 .howItWorks-content-item-mid-title {
                     font-style: normal;
                     font-weight: 700;
@@ -316,3 +466,5 @@
         }
     }
 }
+
+
