@@ -1,15 +1,13 @@
 import './StudentSignUp.css';
 import React, { useState } from 'react';
-import Clownfish from "../img/clownfish-img.png";
-import ClownfishText from "../img/clownfish-text.png";
+import Clownfish from "../img/clownfish-logo.png";
 
 function StudentSignUp() {
     return (
         <div className="splitScreen">
         <div className="topPane">
             <div className="leftCorner">
-                <img className="clownfish-text" src={ClownfishText} alt="logo"></img>
-                <img className="clownfish-img" src={Clownfish} alt="logo"></img>
+                <img className="clownfish-logo" src={Clownfish} alt="logo"></img>
             </div>
             <div className="signin">
                 <h1 className="title">VERIFY YOUR DETAILS</h1>
@@ -28,13 +26,13 @@ function StudentSignUp() {
                     <input className="input" type="password" placeholder="Password"/>
                     <h6 className="birthdate">Birth Date</h6>
                     <input className="input" type="date" placeholder="birthday"/>
-                <button className="create-button">Create Account</button>
+                <button className="create-button">CREATE ACCOUNT</button>
             </form>
             </div>
         </div>
         <div className="bottomPane">
             <div className="rightCorner">
-                <h6>Not a student? <span className="signin_link">Previous</span> </h6>
+                <h6>Not a student? <span className="signin_link">Back</span> </h6>
             </div>
             <div className="rightText">
                 <h1 className="title">TELL US ABOUT YOURSELF</h1>

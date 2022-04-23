@@ -1,7 +1,6 @@
 import './GeneralSignUp.css';
 import React, { useState } from 'react';
-import Clownfish from "../img/clownfish-img.png";
-import ClownfishText from "../img/clownfish-text.png";
+import Clownfish from "../img/clownfish-logo.png";
 import StudentSignUp from './StudentSignUp';
 
 function GeneralSignUp() {
@@ -9,15 +8,14 @@ function GeneralSignUp() {
         <div className="splitScreen">
             <div className="topPane">
                 <div className="leftCorner">
-                    <img className="clownfish-text" src={ClownfishText} alt="logo"></img>
-                    <img className="clownfish-img" src={Clownfish} alt="logo"></img>
+                    <img className="clownfish-logo" src={Clownfish} alt="logo"></img>
                 </div>
                 <div className="signin">
                     <h1 className="title">SIGN UP</h1>
                     <h6>Let's get you started.</h6>
-                    <button className="button">Student Account</button>
+                    <button className="account-button">Student Account</button>
                     <h5>or</h5>
-                    <button className="button">Business Account</button>
+                    <button className="account-button">Business Account</button>
                     <h6 className="login">Already have an account? <span className="signin_link">Sign in</span> </h6>
                 </div>
             </div>
