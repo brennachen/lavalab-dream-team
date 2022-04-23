@@ -1,0 +1,141 @@
+.splitScreen-horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+.splitScreen-vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.leftPane {
+    width: 30%;
+    border: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+}
+
+.leftBox {
+    border-bottom: 1px solid lightgray;
+    text-align: left;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.leftSide {
+    width: 80%;
+}
+
+.rightSide {
+    width: 20%;
+}
+
+.middlePane {
+    background-color: white;
+    color: black;
+    width: 70%;
+    height: 100vh;
+    border: 1px solid lightgray;
+    display: flex;
+    flex-direction: row;
+}
+
+.button {
+    background-color: #D96F03;
+    color:white;;
+    border: none;
+    font-size: 15px;
+    padding: 10px 60px;
+    width: 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.leftText {
+    padding-top: 10px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    line-height: 100%;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+.rightText {
+    margin-top: 0px;
+    padding-top: 10px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    line-height: 100%;
+}
+
+.clownfish-text {
+    height: 20px;
+}
+
+.clownfish-img {
+    margin-left: 10px;
+    height: 20px;
+}
+
+.login {
+    text-align: center;
+}
+
+ul {
+    margin-top: 30px;
+    line-height: 0px;
+}
+
+.box {
+    margin: 10px;
+    height: 50%;
+    width: 90%;
+    border: 1px solid lightgray;
+}
+
+.text {
+    padding: 20px;
+}
+
+.text h3 {
+    font-style: bold;
+    line-height: 0px;
+}
+
+.text h6 {
+    line-height: 20px;
+}
+
+.heart {
+    height: 25px;
+    padding: 30px;
+}
+
+.company {
+    display: flex;
+    flex-direction: row;
+}
+
+.leftCompanyLogo img {
+    height: 70px;
+    margin-top: 10px;
+}
+
+.rightCompanyText {
+    margin-left: 20px;
+    margin-top: 5px;
+    text-align: left;
+    height: 50px;
+}
+
+.rightCompanyText h3 {
+    line-height: 0px;
+    padding: 0px;
+}

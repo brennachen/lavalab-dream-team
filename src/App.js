@@ -5,6 +5,7 @@ import LogIn from "./SignUp/LogIn"
 import GeneralSignUp from './SignUp/GeneralSignUp';
 import StudentSignUp from './SignUp/StudentSignUp';
 import StudentHome from "./StudentHome/StudentHome";
+import JobListingPage from './JobListingPage/JobListingPage';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/signup" element={<GeneralSignUp />}></Route>
           <Route path="/studentsignup" element={<StudentSignUp />}></Route>
           <Route path="/studentHome" element={<StudentHome />}></Route>
+          <Route path="/jobListing" element={<JobListingPage />}></Route>
         </Routes>
       </Router>
     </div>
