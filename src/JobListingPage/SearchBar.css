@@ -1,0 +1,118 @@
+.topBar {
+  width: 100%;
+  margin-top: 10px;
+  border-top: 1px solid #808080;
+  padding-top: 20px;
+}
+.topBar .searchBar {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+.topBar .searchBar .inputBar {
+  display: flex;
+  background: rgba(196, 196, 196, 0.25);
+  border-radius: 7px;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: fit-content;
+  height: 20px;
+}
+.topBar .searchBar .inputBar .searchPic {
+  width: 20px;
+  height: 20px;
+}
+.topBar .searchBar .inputBar .input {
+  margin-left: 5px;
+  width: 200px;
+  outline: none;
+  border: none;
+  background: none;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+.topBar .searchBar .filter {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 25px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.topBar .searchBar .filter .filterPic {
+  width: 20px;
+  height: 15px;
+  margin-right: 7px;
+}
+.topBar .searchBar .otherFilters {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 15px;
+  border: 1px solid #D96F03;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.topBar .resultBar {
+  margin-top: 20px;
+  background: #F0F5F5;
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  align-items: center;
+}
+.topBar .resultBar .resultNum {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 35px;
+  color: #000000;
+  margin-left: 50px;
+}
+.topBar .resultBar .sortByText {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  margin-left: 15px;
+  color: #000000;
+}
+.topBar .resultBar .picker {
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 3px;
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  align-items: center;
+}
+.topBar .resultBar .picker .pickerPic {
+  width: 20px;
+  height: 15px;
+  margin-left: 10px;
+}

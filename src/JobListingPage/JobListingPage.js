@@ -3,11 +3,13 @@ import React, { useState } from 'react';
 import NavBar from './NavBar';
 import Heart from "../img/heart.png";
 import CoffeeLogo from "../img/Coffee Logo.png";
+import SearchBar from "./SearchBar";
 
 function JobListingPage() {
     return (
         <div className="splitScreen-vertical">
             <NavBar />
+            <SearchBar />
             <div className="splitScreen-horizontal">
                 <div className="leftPane">
                     <div className="leftBox">

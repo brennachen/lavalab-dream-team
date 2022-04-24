@@ -1,0 +1,132 @@
+.topBar {
+    width: 100%;
+    margin-top: 10px;
+    border-top: 1px solid #808080;
+    padding-top: 20px;
+    .searchBar {
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+        .inputBar {
+            display: flex;
+            background: rgba(196, 196, 196, 0.25);
+            border-radius: 7px;
+            align-items: center;
+            justify-content: space-around;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: fit-content;
+            height: 20px;
+
+            .searchPic {
+                width: 20px;
+                height: 20px;
+            }
+
+            .input {
+                margin-left: 5px;
+                width: 200px;
+                outline: none;
+                border: none;
+                background: none;
+                font-family: Mulish;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 25px;
+                display: flex;
+                align-items: center;
+
+                color: rgba(0, 0, 0, 0.5);
+            }
+        }
+        
+        .filter {
+            width: fit-content;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-left: 25px;
+            border: 1px solid #000000;
+            box-sizing: border-box;
+            border-radius: 3px;
+
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+
+            .filterPic {
+                width: 20px;
+                height: 15px;
+                margin-right: 7px;
+            }
+        }
+
+        .otherFilters {
+            width: fit-content;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-left: 15px;
+            border: 1px solid #D96F03;
+            box-sizing: border-box;
+            border-radius: 3px;
+
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+        
+    }
+
+    .resultBar {
+        margin-top: 20px;
+        background: #F0F5F5;
+        display: flex;
+        flex-direction: row;
+        height: 60px;
+        align-items: center;
+
+        .resultNum {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 35px;
+            color: #000000;
+            margin-left: 50px;
+        }
+
+        .sortByText {
+            font-family: 'Mulish';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 28px;
+            margin-left: 15px;
+            color: #000000;
+        }
+
+        .picker {
+            border: 1px solid #000000;
+            box-sizing: border-box;
+            border-radius: 3px;
+            display: flex;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            align-items: center;
+
+            .pickerPic {
+                width: 20px;
+                height: 15px;
+                margin-left: 10px;
+            }
+        }
+    }
+}
