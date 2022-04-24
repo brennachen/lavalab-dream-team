@@ -6,6 +6,7 @@ import GeneralSignUp from './SignUp/GeneralSignUp';
 import StudentSignUp from './SignUp/StudentSignUp';
 import StudentHome from "./StudentHome/StudentHome";
 import JobListingPage from './JobListingPage/JobListingPage';
+import ApplicationPage from './ApplicationPage/ApplicationPage';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/studentsignup" element={<StudentSignUp />}></Route>
           <Route path="/studentHome" element={<StudentHome />}></Route>
           <Route path="/jobListing" element={<JobListingPage />}></Route>
+          <Route path="/application" element={<ApplicationPage />}></Route>
         </Routes>
       </Router>
     </div>

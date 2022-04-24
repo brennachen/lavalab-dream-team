@@ -1,4 +1,4 @@
-import './JobListingPage.css';
+import './ApplicationPage.css';
 import React, { useState } from 'react';
 import Heart from "../img/heart.png";
 import CoffeeLogo from "../img/Coffee Logo.png";
@@ -6,14 +6,15 @@ import Clownfish from "../img/clownfish-logo.png"
 import Messaging from "../img/messaging.png";
 import Pfp from "../img/Pfp.png";
 import Arrow from "../img/Arrow.png";
-function JobListingPage() {
+
+function ApplicationPage() {
     return (
         <div className="splitScreen-vertical">
             <div className="topnav">
                 <img className="clownfish-logo" src={Clownfish} alt="logo"></img>
                 <div class="topnav-right">
-                    <a class="active" href="#home">Projects</a>
-                    <a href="#applied">Applied</a>
+                    <a href="#home">Projects</a>
+                    <a class="active" href="#applied">Applied</a>
                     <a href="#loved">Loved</a>
                     <img className="img-messaging" src={Messaging} alt="logo"></img>
                     <img className="img-pfp" src={Pfp} alt="logo"></img>
@@ -68,46 +69,55 @@ function JobListingPage() {
                         </div>
                     </div>
                 </div>
-                <div className="middlePane-jobs">
-                    <div className="leftText">
+                <div className="middlePane">
+                    <div className="topText-applications">
+                        <h1>Your Application</h1>
+                        <div className="box-applications">
+                            <div className="text">
+                                <div className="company">
+                                    <div className="leftCompanyLogo">
+                                        <img className="coffeeLogo" src={Pfp} alt="logo"></img>
+                                    </div>
+                                    <div className="rightCompanyText">
+                                        <h3>Sherry Gao</h3>
+                                        <h5>Applying as Front-end software engineer</h5>
+                                    </div>
+                                </div>
+                                <h4>Desired Location</h4>
+                                <h6>Open to Los Angeles or remote</h6>
+                                <h4>Education</h4>
+                                <h6>University of Southern California 2023</h6>
+                                <h6>BS, Computer Science</h6>
+                                <h4>Desired Compensation</h4>
+                                <h6>Want to negotiate</h6>
+                            </div>
+                        </div>
+                   </div>
+                   <div className="bottomText-applications">
                         <div className="company">
                             <div className="leftCompanyLogo">
                                 <img className="coffeeLogo" src={CoffeeLogo} alt="logo"></img>
                             </div>
-                            <div className="rightCompanyText-jobs">
+                            <div className="rightCompanyText">
                                 <h3>Dave's Coffee</h3>
-                                <h6>Study Lounge Cafe<br/>Los Angeles, CA</h6>
+                                <a href="https://daves.coffee/"><h6>https://daves.coffee/</h6></a>
                             </div>
                         </div>
-                        <h2 className="title-jobs">Software Engineer: Management System</h2>
+                        <h3>Software Engineer: Management System</h3>
                         <h6>Dave’s coffee is looking for a developer to build a WIX website to handle online orders and display our menu.
                         <br/><br/>We expect this project to be a ten-hour time committment over the span of two hours so it is finalized by June 24, 2022.</h6>
-                        <h2>Preferred Qualifications</h2>
-                        <ul>
-                            <li><h6>Insert text here</h6></li>
-                            <li><h6>Insert text here</h6></li>
-                            <li><h6>Insert text here</h6></li>
-                            <li><h6>Insert text here</h6></li>
-                        </ul>
-                        <button className="button">Get Connected</button>
-                   </div>
-                   <div className="rightText">
-                        <div className="box">
-                            <div className="text">
-                                <h3>Website</h3>
-                                <a href="https://daves.coffee/"><h6>https://daves.coffee/</h6></a>
-                                <h3>Location(s)</h3>
+                        <div className="splitScreen-horizontal">
+                            <div className="item">
+                                <h4>Location(s)</h4>
                                 <h6>Los Angeles</h6>
-                                <h3>Time Commitment</h3>
+                            </div>
+                            <div className="item-middle">
+                                <h4>Time Commitment</h4>
                                 <h6>10 hours total</h6>
-                                <h3>Date Posted</h3>
-                                <h6>May 14, 2022</h6>
-                                <h3>Ideal Project Timeline</h3>
-                                <h6>Onboard: Late April<br/>Execute: mid-late April</h6>
-                                <h3>Contact</h3>
-                                <h6>Joshua Wilson (Owner)
-                                    <br/>Georga Garden (Head Designer)
-                                </h6>
+                            </div>
+                            <div className="item">
+                                <h4>Posted by</h4>
+                                <h6>Joshua Wilson (Owner)</h6>
                             </div>
                         </div>
                    </div>
@@ -117,4 +127,4 @@ function JobListingPage() {
     );
 }
 
-export default JobListingPage;
+export default ApplicationPage;
