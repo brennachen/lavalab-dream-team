@@ -2,7 +2,6 @@ import './JobListingPage.css';
 import React, { useState } from 'react';
 import Heart from "../img/heart.png";
 import CoffeeLogo from "../img/Coffee Logo.png";
-<<<<<<< HEAD
 import Clownfish from "../img/clownfish-logo.png"
 import Messaging from "../img/messaging.png";
 import Pfp from "../img/Pfp.png";
@@ -21,15 +20,6 @@ function JobListingPage() {
                     <img className="img-arrow" src={Arrow} alt="logo"></img>
                 </div>
             </div>
-=======
-import SearchBar from "./SearchBar";
-
-function JobListingPage() {
-    return (
-        <div className="splitScreen-vertical">
-            <NavBar />
-            <SearchBar />
->>>>>>> 249e6f701b31a91bb57e1a19c4382539a7a1b4ad
             <div className="splitScreen-horizontal">
                 <div className="leftPane">
                     <div className="leftBox">
@@ -103,7 +93,7 @@ function JobListingPage() {
                    </div>
                    <div className="rightText">
                         <div className="box">
-                            <div className="text">
+                            <div className="text-jobs">
                                 <h3>Website</h3>
                                 <a href="https://daves.coffee/"><h6>https://daves.coffee/</h6></a>
                                 <h3>Location(s)</h3>
