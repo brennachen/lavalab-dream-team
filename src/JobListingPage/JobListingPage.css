@@ -95,7 +95,7 @@ ul {
 
 .box {
     margin: 10px;
-    height: 50%;
+    height: 500px;
     width: 90%;
     border: 1px solid lightgray;
 }
@@ -138,4 +138,9 @@ ul {
 .rightCompanyText h3 {
     line-height: 0px;
     padding: 0px;
+}
+
+.title-jobs {
+    font-size: 30px;
+    line-height: 100%;
 }

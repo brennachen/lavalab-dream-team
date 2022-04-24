@@ -67,7 +67,7 @@ function JobListingPage() {
                                 <h6>Study Lounge Cafe<br/>Los Angeles, CA</h6>
                             </div>
                         </div>
-                        <h1 className="title">Software Engineer: Management System</h1>
+                        <h2 className="title-jobs">Software Engineer: Management System</h2>
                         <h6>Dave’s coffee is looking for a developer to build a WIX website to handle online orders and display our menu.
                         <br/><br/>We expect this project to be a ten-hour time committment over the span of two hours so it is finalized by June 24, 2022.</h6>
                         <h2>Preferred Qualifications</h2>

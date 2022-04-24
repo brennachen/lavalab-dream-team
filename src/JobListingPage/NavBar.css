@@ -29,7 +29,7 @@
 .topnav a.active {
   text-decoration: underline;
   text-decoration-color: #D96F03;
-  text-decoration-thickness: 0.3em;
+  text-decoration-thickness: 0.2em;
   color: black;
 }
 
