@@ -2,34 +2,27 @@ import './JobListingPage.css';
 import React, { useState } from 'react';
 import Heart from "../img/heart.png";
 import CoffeeLogo from "../img/Coffee Logo.png";
-<<<<<<< HEAD
+import SearchBar from "./SearchBar";
 import Clownfish from "../img/clownfish-logo.png"
 import Messaging from "../img/messaging.png";
 import Pfp from "../img/Pfp.png";
 import Arrow from "../img/Arrow.png";
+
 function JobListingPage() {
     return (
         <div className="splitScreen-vertical">
             <div className="topnav">
                 <img className="clownfish-logo" src={Clownfish} alt="logo"></img>
                 <div class="topnav-right">
-                    <a class="active" href="#home">Projects</a>
-                    <a href="#applied">Applied</a>
+                    <a href="#home">Projects</a>
+                    <a class="active" href="#applied">Applied</a>
                     <a href="#loved">Loved</a>
                     <img className="img-messaging" src={Messaging} alt="logo"></img>
                     <img className="img-pfp" src={Pfp} alt="logo"></img>
                     <img className="img-arrow" src={Arrow} alt="logo"></img>
                 </div>
             </div>
-=======
-import SearchBar from "./SearchBar";
-
-function JobListingPage() {
-    return (
-        <div className="splitScreen-vertical">
-            <NavBar />
             <SearchBar />
->>>>>>> 249e6f701b31a91bb57e1a19c4382539a7a1b4ad
             <div className="splitScreen-horizontal">
                 <div className="leftPane">
                     <div className="leftBox">
