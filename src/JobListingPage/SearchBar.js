@@ -7,6 +7,17 @@ function SearchBar() {
     const searchPic = require("./../img/search.png");
     const pickerPic = require("./../img/picker.png");
 
+    const customStyles = {
+        content: {
+          top: '50%',
+          left: '50%',
+          right: 'auto',
+          bottom: 'auto',
+          marginRight: '-50%',
+          transform: 'translate(-50%, -50%)',
+        },
+    };
+
     return (
         <div className="topBar">
             <div className="searchBar">
