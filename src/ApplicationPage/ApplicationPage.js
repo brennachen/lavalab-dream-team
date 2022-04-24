@@ -6,6 +6,10 @@ import Clownfish from "../img/clownfish-logo.png"
 import Messaging from "../img/messaging.png";
 import Pfp from "../img/Pfp.png";
 import Arrow from "../img/Arrow.png";
+import Nayad from "../img/nayad.png";
+import Pluralsight from "../img/pluralsight.png";
+import Lorenzo from "../img/lorenzo.png";
+import Stok from "../img/stok.png";
 
 function ApplicationPage() {
     return (
@@ -23,32 +27,94 @@ function ApplicationPage() {
             </div>
             <div className="splitScreen-horizontal">
                 <div className="leftPane">
-                    <div className="leftBox">
+                    <div className="leftBox-selected">
                         <div className="leftSide">
-                            <h3>Data Analyst: Marketing Campaign</h3>
-                            <h4>Pending Response</h4>
-                            <h6>Request follow-up?</h6>
+                            <div className="image-text">
+                                <img className="image-side" src={CoffeeLogo} alt="logo"></img>
+                                <div class="text-side">
+                                    <h3>Dave's Coffee</h3>
+                                    <h4>Web Development</h4>
+                                </div>
+                            </div>
+                            <div className="bottom-image-text">
+                                <div class="orangeCircle"/>
+                                <div class="bottom-text-side">
+                                    <h5>Pending Response</h5>
+                                    <h6>Request follow-up?</h6>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="leftBox">
                         <div className="leftSide">
-                            <h3>Front-end Engineer: Management System</h3>
-                            <h4>Pending Response</h4>
-                            <h6>Request follow-up?</h6>
+                            <div className="image-text">
+                                <img className="image-side" src={Nayad} alt="logo"></img>
+                                <div class="text-side">
+                                    <h3>Nayad Bottle</h3>
+                                    <h4>Mobile Application</h4>
+                                </div>
+                            </div>
+                            <div className="bottom-image-text">
+                                <div class="greenCircle"/>
+                                <div class="bottom-text-side">
+                                    <h5>Connected</h5>
+                                    <h6>Take the next steps!</h6>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="leftBox">
                         <div className="leftSide">
-                            <h3>Full-stack Engineer: Website Development</h3>
-                            <h4>Pending Response</h4>
-                            <h6>Request follow-up?</h6>
+                            <div className="image-text">
+                                <img className="image-side" src={Pluralsight} alt="logo"></img>
+                                <div class="text-side">
+                                    <h3>Pluralsight</h3>
+                                    <h4>Management System</h4>
+                                </div>
+                            </div>
+                            <div className="bottom-image-text">
+                                <div class="greenCircle"/>
+                                <div class="bottom-text-side">
+                                    <h5>Connected</h5>
+                                    <h6>Take the next steps!</h6>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="leftBox">
                         <div className="leftSide">
-                            <h3>Back-end Engineer: Website Development</h3>
-                            <h4>Pending Response</h4>
-                            <h6>Request follow-up?</h6>
+                            <div className="image-text">
+                                <img className="image-side" src={Lorenzo} alt="logo"></img>
+                                <div class="text-side">
+                                    <h3>Lorenzo</h3>
+                                    <h4>Website Development</h4>
+                                </div>
+                            </div>
+                            <div className="bottom-image-text">
+                                <div class="redCircle"/>
+                                <div class="bottom-text-side">
+                                    <h5>No longer accepting</h5>
+                                    <h6>Take the next steps!</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="leftBox">
+                        <div className="leftSide">
+                            <div className="image-text">
+                                <img className="image-side" src={Stok} alt="logo"></img>
+                                <div class="text-side">
+                                    <h3>Stok</h3>
+                                    <h4>Website Landing Page</h4>
+                                </div>
+                            </div>
+                            <div className="bottom-image-text">
+                                <div class="orangeCircle"/>
+                                <div class="bottom-text-side">
+                                    <h5>Pending Response</h5>
+                                    <h6>Request follow-up?</h6>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

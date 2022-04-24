@@ -15,7 +15,7 @@ function GeneralSignUp() {
                     <h1 className="title">SIGN UP</h1>
                     <h6>Let's get you started.</h6>
                     <button className="account-button">Student Account</button>
-                    <h5>or</h5>
+                    <h5 className="cross">or</h5>
                     <button className="account-button">Business Account</button>
                     <h6 className="login">Already have an account? <span className="signin_link">Sign in</span> </h6>
                 </div>

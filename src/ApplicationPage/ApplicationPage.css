@@ -331,3 +331,77 @@ ul {
     cursor: pointer;
     margin-bottom: 10px;
 }
+
+.inline {
+    display: inline;
+}
+
+.image-text {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.text-side {
+    margin-left: 15px;
+    line-height: 2px;
+}
+
+.text-side h4 {
+    font-weight: 300;
+}
+
+.image-side {
+    height: 50px;
+    margin-top: 5px;
+}
+
+.leftBox-selected {
+    border-bottom: 1px solid lightgray;
+    text-align: left;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: row;
+    background-color: #F0F5F5;
+}
+
+.orangeCircle {
+    background-color: #D96F03;
+    display: flex;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.redCircle {
+    background-color: #D90303;
+    display: flex;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.greenCircle {
+    background-color: #2B4F4A;
+    display: flex;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.bottom-text-side {
+    line-height: 0px;
+    margin-top: 0px;
+    margin-left: 10px;
+}
+
+.bottom-image-text {
+    display: flex;
+    flex-direction: row;
+}
