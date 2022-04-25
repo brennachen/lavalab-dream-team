@@ -1,4 +1,5 @@
 import './JobListingPage.css';
+import './Modal.css';
 import React, { useState } from 'react';
 import Heart from "../img/heart.png";
 import CoffeeLogo from "../img/Coffee Logo.png";
@@ -11,6 +12,14 @@ import Modal from 'react-modal/lib/components/Modal';
 
 function JobListingPage() {
 
+    var isModalOpen;
+    var isConnectedModalOpen;
+    var isSubmitModalOpen;
+
+    var [isModalOpen, setIsModalOpen] = useState(false);
+    var [isConnectedModalOpen, setIsConnectedModalOpen] = useState(false);
+    var [isSubmitModalOpen, setIsSubmitModalOpen] = useState(false);
+
     const closeButton = require("./../img/close.png");
     const searchPic = require("./../img/search.png");
 
@@ -22,18 +31,120 @@ function JobListingPage() {
             bottom: 'auto',
             marginRight: '-50%',
             transform: 'translate(-50%, -50%)',
-            overflow: 'scroll'
-        },
+            height: '500px',
+            overlfow: 'scroll',
+            paddingBottom: '50px'
+        }
     };
+
+    const customStylesConnected = {
+        content: {
+            top: '50%',
+            left: '50%',
+            right: 'auto',
+            bottom: 'auto',
+            marginRight: '-50%',
+            transform: 'translate(-50%, -50%)',
+            height: '400px',
+            width: '600px',
+            overlfow: 'scroll',
+            paddingBottom: '50px',
+            paddingLeft: '50px',
+            paddingRight: '50px',
+        }
+    }
+
+
+    const customStylesSubmit = {
+        content: {
+            top: '50%',
+            left: '50%',
+            right: 'auto',
+            bottom: 'auto',
+            marginRight: '-50%',
+            transform: 'translate(-50%, -50%)',
+            height: '100px',
+            width: '600px',
+            overlfow: 'scroll',
+            paddingBottom: '50px',
+            paddingLeft: '50px',
+            paddingRight: '50px',
+        }
+    }
+
+    function handleModal() {
+        setIsModalOpen(!isModalOpen);
+    }
+
+    function handleConnectedModal() {
+        setIsConnectedModalOpen(!isConnectedModalOpen);
+    }
+
+    function handleSubmitModal() {
+        setIsConnectedModalOpen(false);
+        setIsSubmitModalOpen(true);
+    }
+
+    function closeSubmitModal() {
+        setIsSubmitModalOpen(false);
+    }
 
     return (
         <div
             className="splitScreen-vertical">
             <Modal
-                isOpen={true}
+                isOpen={isSubmitModalOpen}
+                style={customStylesSubmit}>
+                <div className="submit-title">Your application has been sent!</div>
+                <div className="submit-text">An email will be sent to you within the next 30 minutes for confirmation.</div>
+                <div className='connected-user-options'>
+                    <div className='connected-cancel' onClick={closeSubmitModal}>exit</div>
+                    <div className='connected-submit' onClick={closeSubmitModal}>View Application</div>
+                </div>
+            </Modal>
+            <Modal
+                isOpen={isConnectedModalOpen}
+                style={customStylesConnected}>
+                <div className="connected-title">
+                    <span className="connected-company">Dave's Coffee: </span>
+                    <span className="connected-position">Website Development</span>
+                </div>
+                <div className="connected-list">
+                    <div className="connected-item">
+                        <div className="connected-subtitle">Location(s)</div>
+                        <div className="connected-answer">Los Angeles</div>
+                    </div>
+                    <div className="connected-item">
+                        <div className="connected-subtitle">Time Commitment</div>
+                        <div className="connected-answer">10 hours total</div>
+                    </div>
+                    <div className="connected-item">
+                        <div className="connected-subtitle">Posted by</div>
+                        <div className="connected-answer">Joshua Wilson (Owner)</div>
+                    </div>
+                </div>
+                <div className="connected-compensation">Accept proposed compensation?</div>
+                <div className="connected-options">
+                    <div className="connected-option">Yes</div>
+                    <div className="connected-option" style={{ marginLeft: 50 }}>No, I want to negotiate </div>
+                </div>
+                <div className="connected-textarea-outline">
+                    <textarea
+                        className="connected-notes"
+                        placeholder='Any final details or notes you want to add?'
+                        type="text"
+                        rows="5" />
+                </div>
+                <div className='connected-user-options'>
+                    <div className='connected-cancel' onClick={handleConnectedModal}>cancel</div>
+                    <div className='connected-submit' onClick={handleSubmitModal}>Send Application</div>
+                </div>
+            </Modal>
+            <Modal
+                isOpen={isModalOpen}
                 style={customStyles}>
                 <div>
-                    <img className="modal-close" src={closeButton} alt="" />
+                    <img className="modal-close" src={closeButton} alt="" onClick={handleModal} />
                     <div className="modal-content">
                         <div className="modal-line">
                             <div>
@@ -104,29 +215,29 @@ function JobListingPage() {
                                             <input type="checkbox" className="modal-text-text" />
                                             <label style={{ marginLeft: 5 }}>Little or No Experience</label>
                                         </div>
-                                        <div style={{display: 'flex'}} className="modal-text-text">
+                                        <div style={{ display: 'flex' }} className="modal-text-text">
                                             <input type="checkbox" className="modal-text-text" />
-                                            <label style={{marginLeft: 5}}>1 year</label>
+                                            <label style={{ marginLeft: 5 }}>1 year</label>
                                         </div>
-                                        <div style={{display: 'flex'}} className="modal-text-text">
+                                        <div style={{ display: 'flex' }} className="modal-text-text">
                                             <input type="checkbox" className="modal-text-text" />
-                                            <label style={{marginLeft: 5}}>2 years</label>
+                                            <label style={{ marginLeft: 5 }}>2 years</label>
                                         </div>
-                                        <div style={{display: 'flex'}} className="modal-text-text">
+                                        <div style={{ display: 'flex' }} className="modal-text-text">
                                             <input type="checkbox" className="modal-text-text" />
-                                            <label style={{marginLeft: 5}}>3 years</label>
+                                            <label style={{ marginLeft: 5 }}>3 years</label>
                                         </div>
-                                        <div style={{display: 'flex'}} className="modal-text-text">
+                                        <div style={{ display: 'flex' }} className="modal-text-text">
                                             <input type="checkbox" className="modal-text-text" />
-                                            <label style={{marginLeft: 5}}>4 years</label>
+                                            <label style={{ marginLeft: 5 }}>4 years</label>
                                         </div>
-                                        <div style={{display: 'flex'}} className="modal-text-text">
+                                        <div style={{ display: 'flex' }} className="modal-text-text">
                                             <input type="checkbox" className="modal-text-text" />
-                                            <label style={{marginLeft: 5}}>5 years</label>
+                                            <label style={{ marginLeft: 5 }}>5 years</label>
                                         </div>
-                                        <div style={{display: 'flex'}} className="modal-text-text">
+                                        <div style={{ display: 'flex' }} className="modal-text-text">
                                             <input type="checkbox" className="modal-text-text" />
-                                            <label style={{marginLeft: 5}}>5+ years</label>
+                                            <label style={{ marginLeft: 5 }}>5+ years</label>
                                         </div>
                                     </div>
                                 </div>
@@ -141,33 +252,47 @@ function JobListingPage() {
                                             <input type="checkbox" className="modal-text-text" />
                                             <label style={{ marginLeft: 5 }}>Short-term   1-5hours</label>
                                         </div>
-                                        <div style={{display: 'flex'}} className="modal-text-text">
+                                        <div style={{ display: 'flex' }} className="modal-text-text">
                                             <input type="checkbox" className="modal-text-text" />
-                                            <label style={{marginLeft: 5}}>Mid-term   5-10hours</label>
+                                            <label style={{ marginLeft: 5 }}>Mid-term   5-10hours</label>
                                         </div>
-                                        <div style={{display: 'flex'}} className="modal-text-text">
+                                        <div style={{ display: 'flex' }} className="modal-text-text">
                                             <input type="checkbox" className="modal-text-text" />
-                                            <label style={{marginLeft: 5}}>Long-term   10-20hours</label>
+                                            <label style={{ marginLeft: 5 }}>Long-term   10-20hours</label>
                                         </div>
-                                        <div style={{display: 'flex'}} className="modal-text-text">
+                                        <div style={{ display: 'flex' }} className="modal-text-text">
                                             <input type="checkbox" className="modal-text-text" />
-                                            <label style={{marginLeft: 5}}>Full-term   20+hours</label>
+                                            <label style={{ marginLeft: 5 }}>Full-term   20+hours</label>
+                                        </div>
+                                        <div style={{ display: 'flex' }} className="modal-text-text">
+                                            <label style={{ marginLeft: 5, color: '#2B4F4A' }}>+ add your own preference</label>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div style={{ marginLeft: 20 }}>
-                                <div className="modal-title">Field of Interest</div>
-                                <div className="modal-item">
-                                    <div className="inputBar">
-                                        <img className="searchPic" src={searchPic} alt="" />
-                                        <input className="input" placeholder="Find your project" />
-                                    </div>
+                                <div className="modal-title">Compensation</div>
+                                <div className="modal-item" style={{ paddingTop: 0 }}>
                                     <div className="modal-text">
-                                        <div className="modal-text-title">Trending Currently</div>
-                                        <div className="modal-text-text">Marketing</div>
-                                        <div className="modal-text-text">Finance</div>
-                                        <div className="modal-text-text">Computer Science</div>
+                                        <div style={{ display: 'flex' }} className="modal-text-text">
+                                            <input type="checkbox" className="modal-text-text" />
+                                            <label style={{ marginLeft: 5 }}>No pay</label>
+                                        </div>
+                                        <div style={{ display: 'flex' }} className="modal-text-text">
+                                            <input type="checkbox" className="modal-text-text" />
+                                            <label style={{ marginLeft: 5 }}>Negotiable</label>
+                                        </div>
+                                        <div style={{ display: 'flex' }} className="modal-text-text">
+                                            <input type="checkbox" className="modal-text-text" />
+                                            <label style={{ marginLeft: 5 }}>10-20 an hour</label>
+                                        </div>
+                                        <div style={{ display: 'flex' }} className="modal-text-text">
+                                            <input type="checkbox" className="modal-text-text" />
+                                            <label style={{ marginLeft: 5 }}>20-40 an hour</label>
+                                        </div>
+                                        <div style={{ display: 'flex' }} className="modal-text-text">
+                                            <label style={{ marginLeft: 5, color: '#2B4F4A' }}>+ add your own range</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -175,6 +300,7 @@ function JobListingPage() {
                     </div>
                 </div>
             </Modal>
+
             <div className="topnav">
                 <img className="clownfish-logo" src={Clownfish} alt="logo"></img>
                 <div class="topnav-right">
@@ -186,7 +312,7 @@ function JobListingPage() {
                     <img className="img-arrow" src={Arrow} alt="logo"></img>
                 </div>
             </div>
-            <SearchBar />
+            <SearchBar handleModal={handleModal} />
             <div className="splitScreen-horizontal">
                 <div className="leftPane">
                     <div className="leftBox">
@@ -256,7 +382,7 @@ function JobListingPage() {
                             <li><h6>Insert text here</h6></li>
                             <li><h6>Insert text here</h6></li>
                         </ul>
-                        <button className="button">Get Connected</button>
+                        <button className="button" onClick={handleConnectedModal}>Get Connected</button>
                     </div>
                     <div className="rightText">
                         <div className="box">

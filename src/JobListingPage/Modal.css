@@ -1,0 +1,130 @@
+.connected-title {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-size: 20px;
+  line-height: 35px;
+  color: #000000;
+  padding-top: 10px;
+}
+.connected-title .connected-company {
+  font-weight: 700;
+}
+.connected-title .connected-position {
+  font-weight: 500;
+}
+.connected-list {
+  display: flex;
+  margin-top: 20px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-size: 15px;
+  color: #000000;
+}
+.connected-list .connected-item {
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  margin-right: 70px;
+}
+.connected-list .connected-item .connected-subtitle {
+  font-weight: 700;
+  width: fit-content;
+}
+.connected-list .connected-item .connected-answer {
+  margin-top: 7px;
+  font-weight: 400;
+  width: fit-content;
+}
+.connected-compensation {
+  margin-top: 25px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  color: #000000;
+}
+.connected-options {
+  margin-top: 15px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
+.connected-option {
+  border: 1px solid #D96F03;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.connected-notes {
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+  text-align: start;
+  border: 1px solid #000000;
+  outline: none;
+  border-radius: 6px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.connected-user-options {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.connected-user-options .connected-cancel {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+.connected-user-options .connected-submit {
+  background: #D96F03;
+  border-radius: 6px;
+  margin-left: 20px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  padding-left: 17px;
+  padding-top: 7px;
+  padding-right: 17px;
+  padding-bottom: 7px;
+}
+.submit-title {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 35px;
+  color: #000000;
+}
+.submit-text {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: #000000;
+}
