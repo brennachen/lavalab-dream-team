@@ -6,6 +6,10 @@ import Clownfish from "../img/clownfish-logo.png"
 import Messaging from "../img/messaging.png";
 import Pfp from "../img/Pfp.png";
 import Arrow from "../img/Arrow.png";
+import Nayad from "../img/nayad.png";
+import Pluralsight from "../img/pluralsight.png";
+import Lorenzo from "../img/lorenzo.png";
+import Stok from "../img/stok.png";
 
 function ApplicationPage() {
     return (
@@ -23,55 +27,103 @@ function ApplicationPage() {
             </div>
             <div className="splitScreen-horizontal">
                 <div className="leftPane">
-                    <div className="leftBox">
+                    <div className="leftBox-selected">
                         <div className="leftSide">
-                            <h3>Software Engineer: Website Development</h3>
-                            <h6>Dave's Coffee<br/>Los Angeles, CA</h6>
-                        </div>
-                        <div className="rightSide">
-                            <img className="heart" src={Heart} alt="logo"></img>
+                            <div className="image-text">
+                                <img className="image-side" src={CoffeeLogo} alt="logo"></img>
+                                <div class="text-side">
+                                    <h3>Dave's Coffee</h3>
+                                    <h4>Web Development</h4>
+                                </div>
+                            </div>
+                            <div className="bottom-image-text">
+                                <div class="orangeCircle"/>
+                                <div class="bottom-text-side">
+                                    <h5>Pending Response</h5>
+                                    <h6>Request follow-up?</h6>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="leftBox">
                         <div className="leftSide">
-                            <h3>Data Analyst: Marketing Campaign</h3>
-                            <h6>Nayad Bottle<br/>Remote</h6>
-                        </div>
-                        <div className="rightSide">
-                            <img className="heart" src={Heart} alt="logo"></img>
-                        </div>
-                    </div>
-                    <div className="leftBox">
-                        <div className="leftSide">
-                            <h3>Front-end Engineer: Management System</h3>
-                            <h6>Plural Site<br/>Remote/LA</h6>
-                        </div>
-                        <div className="rightSide">
-                            <img className="heart" src={Heart} alt="logo"></img>
-                        </div>
-                    </div>
-                    <div className="leftBox">
-                        <div className="leftSide">
-                            <h3>Full-stack Engineer: Website Development</h3>
-                            <h6>Lorenzo<br/>Remote</h6>
-                        </div>
-                        <div className="rightSide">
-                            <img className="heart" src={Heart} alt="logo"></img>
+                            <div className="image-text">
+                                <img className="image-side" src={Nayad} alt="logo"></img>
+                                <div class="text-side">
+                                    <h3>Nayad Bottle</h3>
+                                    <h4>Mobile Application</h4>
+                                </div>
+                            </div>
+                            <div className="bottom-image-text">
+                                <div class="greenCircle"/>
+                                <div class="bottom-text-side">
+                                    <h5>Connected</h5>
+                                    <h6>Take the next steps!</h6>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="leftBox">
                         <div className="leftSide">
-                            <h3>Back-end Engineer: Website Development</h3>
-                            <h6>Lorenzo<br/>Remote</h6>
+                            <div className="image-text">
+                                <img className="image-side" src={Pluralsight} alt="logo"></img>
+                                <div class="text-side">
+                                    <h3>Pluralsight</h3>
+                                    <h4>Management System</h4>
+                                </div>
+                            </div>
+                            <div className="bottom-image-text">
+                                <div class="greenCircle"/>
+                                <div class="bottom-text-side">
+                                    <h5>Connected</h5>
+                                    <h6>Take the next steps!</h6>
+                                </div>
+                            </div>
                         </div>
-                        <div className="rightSide">
-                            <img className="heart" src={Heart} alt="logo"></img>
+                    </div>
+                    <div className="leftBox">
+                        <div className="leftSide">
+                            <div className="image-text">
+                                <img className="image-side" src={Lorenzo} alt="logo"></img>
+                                <div class="text-side">
+                                    <h3>Lorenzo</h3>
+                                    <h4>Website Development</h4>
+                                </div>
+                            </div>
+                            <div className="bottom-image-text">
+                                <div class="redCircle"/>
+                                <div class="bottom-text-side">
+                                    <h5>No longer accepting</h5>
+                                    <h6>Take the next steps!</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="leftBox">
+                        <div className="leftSide">
+                            <div className="image-text">
+                                <img className="image-side" src={Stok} alt="logo"></img>
+                                <div class="text-side">
+                                    <h3>Stok</h3>
+                                    <h4>Website Landing Page</h4>
+                                </div>
+                            </div>
+                            <div className="bottom-image-text">
+                                <div class="orangeCircle"/>
+                                <div class="bottom-text-side">
+                                    <h5>Pending Response</h5>
+                                    <h6>Request follow-up?</h6>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div className="middlePane">
                     <div className="topText-applications">
-                        <h1>Your Application</h1>
+                        <div className="opposite">
+                            <h1 className="topText-title">Your Application</h1>
+                            <h5>Print/View</h5>
+                        </div>
                         <div className="box-applications">
                             <div className="text">
                                 <div className="company">
@@ -80,7 +132,12 @@ function ApplicationPage() {
                                     </div>
                                     <div className="rightCompanyText">
                                         <h3>Sherry Gao</h3>
-                                        <h5>Applying as Front-end software engineer</h5>
+                                        <h6>Applying as Front-end software engineer</h6>
+                                    </div>
+                                    <div className="rightButtons">
+                                        <button className="button-applications">Resume</button>
+                                        <button className="button-applications">Website</button>
+                                        <h6>Applied 4 days ago</h6>
                                     </div>
                                 </div>
                                 <h4>Desired Location</h4>
@@ -94,6 +151,10 @@ function ApplicationPage() {
                         </div>
                    </div>
                    <div className="bottomText-applications">
+                        <div className="opposite-project">
+                            <h1 className="topText-title">Project Details</h1>
+                            <h5>View Project Details</h5>
+                        </div>
                         <div className="company">
                             <div className="leftCompanyLogo">
                                 <img className="coffeeLogo" src={CoffeeLogo} alt="logo"></img>
@@ -104,8 +165,8 @@ function ApplicationPage() {
                             </div>
                         </div>
                         <h3>Software Engineer: Management System</h3>
-                        <h6>Dave’s coffee is looking for a developer to build a WIX website to handle online orders and display our menu.
-                        <br/><br/>We expect this project to be a ten-hour time committment over the span of two hours so it is finalized by June 24, 2022.</h6>
+                        <h6 className="summaryTest">Dave’s coffee is looking for a developer to build a WIX website to handle online orders and display our menu.
+                        We expect this project to be a ten-hour time committment over the span of two hours so it is finalized by June 24, 2022.</h6>
                         <div className="splitScreen-horizontal">
                             <div className="item">
                                 <h4>Location(s)</h4>

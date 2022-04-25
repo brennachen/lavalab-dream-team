@@ -106,16 +106,16 @@ ul {
     border: 1px solid lightgray;
 }
 
-.text {
+.text-jobs {
     padding: 20px;
 }
 
-.text h3 {
+.text-jobs h3 {
     font-style: bold;
     line-height: 0px;
 }
 
-.text h6 {
+.text-jobs h6 {
     line-height: 20px;
 }
 
@@ -127,16 +127,17 @@ ul {
 .company {
     display: flex;
     flex-direction: row;
+    margin-bottom: 10px;
 }
 
 .leftCompanyLogo img {
-    height: 70px;
-    margin-top: 10px;
+    height: 80px;
+    margin-top: 0px;
 }
 
 .rightCompanyText-jobs {
     margin-left: 20px;
-    margin-top: 5px;
+    margin-top: 15px;
     text-align: left;
     height: 50px;
 }
@@ -144,6 +145,11 @@ ul {
 .rightCompanyText-jobs h3 {
     line-height: 0px;
     padding: 0px;
+    margin-bottom: 0px;
+}
+
+.rightCompanyText-jobs h6 {
+    margin-top: 15px;
 }
 
 .title-jobs {

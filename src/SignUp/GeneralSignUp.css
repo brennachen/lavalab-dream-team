@@ -40,20 +40,20 @@
     height: 1px;
 }
 
-h5 {
+.cross {
     display: flex;
     flex-direction: row;
   }
-  h5:before, h5:after{
+  .cross:before, .cross:after{
     content: "";
     flex: 1 1;
     border-bottom: 1px solid;
     margin: auto;
   }
-  h5:before {
+  .cross:before {
     margin-right: 10px
   }
-  h5:after {
+  .cross:after {
     margin-left: 10px
   }
 

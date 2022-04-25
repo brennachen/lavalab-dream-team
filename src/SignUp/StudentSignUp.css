@@ -38,23 +38,6 @@
     padding: 10px;
 }
 
-h5 {
-    display: flex;
-    flex-direction: row;
-  }
-  h5:before, h5:after{
-    content: "";
-    flex: 1 1;
-    border-bottom: 1px solid;
-    margin: auto;
-  }
-  h5:before {
-    margin-right: 10px
-  }
-  h5:after {
-    margin-left: 10px
-  }
-
 .title {
     font-size: 50px;
     line-height: 100%;

@@ -260,7 +260,7 @@ function JobListingPage() {
                     </div>
                     <div className="rightText">
                         <div className="box">
-                            <div className="text">
+                            <div className="text-jobs">
                                 <h3>Website</h3>
                                 <a href="https://daves.coffee/"><h6>https://daves.coffee/</h6></a>
                                 <h3>Location(s)</h3>
