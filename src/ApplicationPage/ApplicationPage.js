@@ -141,12 +141,12 @@ function ApplicationPage() {
                                     </div>
                                 </div>
                                 <h4>Desired Location</h4>
-                                <h6>Open to Los Angeles or remote</h6>
+                                <h5>Open to Los Angeles or remote</h5>
                                 <h4>Education</h4>
-                                <h6>University of Southern California 2023</h6>
-                                <h6>BS, Computer Science</h6>
+                                <h5>University of Southern California 2023</h5>
+                                <h5>BS, Computer Science</h5>
                                 <h4>Desired Compensation</h4>
-                                <h6>Want to negotiate</h6>
+                                <h5>Want to negotiate</h5>
                             </div>
                         </div>
                    </div>
@@ -161,12 +161,12 @@ function ApplicationPage() {
                             </div>
                             <div className="rightCompanyText">
                                 <h3>Dave's Coffee</h3>
-                                <a href="https://daves.coffee/"><h6>https://daves.coffee/</h6></a>
+                                <a href="https://daves.coffee/"><h5>https://daves.coffee/</h5></a>
                             </div>
                         </div>
                         <h3>Software Engineer: Management System</h3>
                         <h6 className="summaryTest">Dave’s coffee is looking for a developer to build a WIX website to handle online orders and display our menu.
-                        We expect this project to be a ten-hour time committment over the span of two hours so it is finalized by June 24, 2022.</h6>
+                        <br/><br/>We expect this project to be a ten-hour time committment over the span of two hours so it is finalized by June 24, 2022.</h6>
                         <div className="splitScreen-horizontal">
                             <div className="item">
                                 <h4>Location(s)</h4>

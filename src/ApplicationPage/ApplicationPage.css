@@ -27,6 +27,23 @@
     width: 80%;
 }
 
+.leftSide h4 {
+    font-size: 20px;
+}
+
+.leftSide h5 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 25px;
+}
+
+.leftSide h6 {
+    font-size: 15px;
+    font-weight: 100;
+    margin-left: 10px;
+}
+
 .rightSide {
     width: 20%;
 }
@@ -100,9 +117,22 @@ ul {
 
 .box-applications {
     margin: 10px;
-    height: 300px;
+    height: 350px;
     width: 90%;
     border: 1px solid lightgray;
+}
+
+.box-applications h4 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.box-applications h5 {
+    font-size: 18px;
+    line-height: 15px;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .text {
@@ -155,10 +185,14 @@ ul {
 .rightCompanyText h3 {
     line-height: 0px;
     padding: 0px;
+    font-size: 25px;
+    margin-bottom: 30px;
 }
 
 .rightCompanyText h6 {
+    margin-top: 0px;
     line-height: 0px;
+    font-size: 20px;
 }
 
 .title {
@@ -247,6 +281,7 @@ ul {
 }
 
 .topText-title {
+    font-size: 35px;
     margin-bottom: 30px;
 }
 
@@ -274,10 +309,6 @@ ul {
 .opposite-project h5 {
     color: #D96F03;
     cursor: pointer;
-}
-
-.rightButtons {
-    width: 20%;
 }
 
 .opposite-box {
@@ -309,7 +340,7 @@ ul {
 }
 
 .rightButtons h6 {
-    margin-left: 10px;
+    margin-left: 45px;
 }
 
 .rightCompanyText-left {
@@ -353,7 +384,8 @@ ul {
 
 .image-side {
     height: 50px;
-    margin-top: 5px;
+    margin-top: 15px;
+    margin-right: 5px;
 }
 
 .leftBox-selected {
@@ -404,4 +436,33 @@ ul {
 .bottom-image-text {
     display: flex;
     flex-direction: row;
+}
+
+.bottomText-applications h3 {
+    font-size: 25px;
+}
+
+.bottomText-applications h4 {
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.bottomText-applications h5 {
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.bottomText-applications h6 {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.opposite h5 {
+    font-size: 18px;
 }

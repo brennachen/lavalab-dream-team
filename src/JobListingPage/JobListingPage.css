@@ -8,7 +8,7 @@
     flex-direction: column;
 }
 
-.leftPane {
+.leftPane-jobs {
     width: 30%;
     border: 1px solid lightgray;
     display: flex;
@@ -46,34 +46,48 @@
     border-bottom-width: 0px;
 }
 
-.button {
+.button-jobs {
     background-color: #D96F03;
     color:white;;
     border: none;
     font-size: 15px;
-    padding: 10px 60px;
+    padding: 20px 50px;
     width: 50%;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 20px;
-    margin-left: 10px;
+    margin-left: 25px;
+    font-size: 20px;
 }
 
-.leftText {
+.leftText-jobs {
     padding-top: 10px;
     width: 60%;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
-    line-height: 100%;
+    line-height: 25px;
     margin-left: 40px;
     margin-right: 20px;
 }
 
-.rightText {
+.leftText-jobs h6 {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-top: 0px;
+    margin-top: 0px;
+}
+
+.leftText-jobs h2 {
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+.rightText-jobs {
     margin-top: 0px;
     padding-top: 10px;
-    width: 60%;
+    width: 40%;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
@@ -100,7 +114,7 @@ ul {
 
 .box {
     margin: 10px;
-    height: 500px;
+    height: 650px;
     width: 90%;
     border: 1px solid lightgray;
 }
@@ -110,12 +124,19 @@ ul {
 }
 
 .text-jobs h3 {
+    margin-top: 5px;
     font-style: bold;
-    line-height: 0px;
+    line-height: 30px;
+    font-size: 25px;
+    margin-bottom: 10px;
 }
 
 .text-jobs h6 {
-    line-height: 20px;
+    margin-top: 5px;
+    line-height: 25px;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 30px;
 }
 
 .heart {
@@ -131,12 +152,12 @@ ul {
 
 .leftCompanyLogo img {
     height: 80px;
-    margin-top: 0px;
+    margin-top: 5px;
 }
 
 .rightCompanyText-jobs {
     margin-left: 20px;
-    margin-top: 15px;
+    margin-top: 0px;
     text-align: left;
     height: 50px;
 }
@@ -145,13 +166,27 @@ ul {
     line-height: 0px;
     padding: 0px;
     margin-bottom: 0px;
+    font-size: 30px;
 }
 
 .rightCompanyText-jobs h6 {
-    margin-top: 15px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
 }
 
 .title-jobs {
-    font-size: 30px;
+    font-size: 40px;
     line-height: 100%;
+}
+
+.leftSide h3 {
+    font-size: 25px;
+}
+
+.leftSide h6 {
+    margin-top: 0px;
+    font-size: 20px;
+    font-weight: 300;
 }

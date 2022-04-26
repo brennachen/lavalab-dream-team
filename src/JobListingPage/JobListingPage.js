@@ -24,7 +24,7 @@ function JobListingPage() {
             </div>
             <SearchBar />
             <div className="splitScreen-horizontal">
-                <div className="leftPane">
+                <div className="leftPane-jobs">
                     <div className="leftBox">
                         <div className="leftSide">
                             <h3>Software Engineer: Website Development</h3>
@@ -72,7 +72,7 @@ function JobListingPage() {
                     </div>
                 </div>
                 <div className="middlePane-jobs">
-                    <div className="leftText">
+                    <div className="leftText-jobs">
                         <div className="company">
                             <div className="leftCompanyLogo">
                                 <img className="coffeeLogo" src={CoffeeLogo} alt="logo"></img>
@@ -87,14 +87,13 @@ function JobListingPage() {
                         <br/><br/>We expect this project to be a ten-hour time committment over the span of two hours so it is finalized by June 24, 2022.</h6>
                         <h2>Preferred Qualifications</h2>
                         <ul>
-                            <li><h6>Insert text here</h6></li>
-                            <li><h6>Insert text here</h6></li>
-                            <li><h6>Insert text here</h6></li>
-                            <li><h6>Insert text here</h6></li>
+                            <li><h6>Must be currently enrolled in a college or university pursuing a Bachelor’s, Master’s, or PhD in a technical or engineering major related to work assignment</h6></li>
+                            <li><h6>Recently completed coursework providing an understanding and application of standard principles, theories, concepts and techniques in related work assignment</h6></li>
+                            <li><h6>Proficient in HTML/CSS/Javascript</h6></li>
                         </ul>
-                        <button className="button">Get Connected</button>
+                        <button className="button-jobs">Get Connected</button>
                    </div>
-                   <div className="rightText">
+                   <div className="rightText-jobs">
                         <div className="box">
                             <div className="text-jobs">
                                 <h3>Website</h3>
