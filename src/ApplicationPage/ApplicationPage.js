@@ -11,6 +11,8 @@ import Pluralsight from "../img/pluralsight.png";
 import Lorenzo from "../img/lorenzo.png";
 import Stok from "../img/stok.png";
 
+import SearchBar from "./SearchBar";
+
 function ApplicationPage() {
     return (
         <div className="splitScreen-vertical">
@@ -25,6 +27,7 @@ function ApplicationPage() {
                     <img className="img-arrow" src={Arrow} alt="logo"></img>
                 </div>
             </div>
+            <SearchBar />
             <div className="splitScreen-horizontal">
                 <div className="leftPane">
                     <div className="leftBox-selected">

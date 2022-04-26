@@ -1,22 +1,15 @@
 import React from 'react';
 import "./SearchBar.css";
 
-function SearchBar() {
+function SearchBar(props) {
 
     const filterPic = require("./../img/filter.png");
     const searchPic = require("./../img/search.png");
     const pickerPic = require("./../img/picker.png");
 
-    const customStyles = {
-        content: {
-          top: '50%',
-          left: '50%',
-          right: 'auto',
-          bottom: 'auto',
-          marginRight: '-50%',
-          transform: 'translate(-50%, -50%)',
-        },
-    };
+    function handleModal() {
+        props.handleModal();
+    }
 
     return (
         <div className="topBar">
@@ -25,7 +18,7 @@ function SearchBar() {
                     <img className="searchPic" src={searchPic} alt="" />
                     <input className="input" placeholder="Find your project"/>
                 </div>
-                <div className="filter">
+                <div className="filter" onClick={handleModal}>
                     <img className="filterPic" src={filterPic} alt="" />
                     <div className="filterText">Filters</div>
                 </div>

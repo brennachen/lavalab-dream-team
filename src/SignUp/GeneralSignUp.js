@@ -1,10 +1,18 @@
 import './GeneralSignUp.css';
 import React, { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 import Clownfish from "../img/clownfish-logo.png";
 import StudentSignUp from './StudentSignUp';
 import Background from "../img/background.png";
 
 function GeneralSignUp() {
+
+    let navigate = useNavigate();
+    const navigateToSignUp = () => {
+        let path = `/studentsignup`;
+        navigate(path);
+    }
+
     return (
         <div className="splitScreen">
             <div className="topPane">
@@ -14,7 +22,7 @@ function GeneralSignUp() {
                 <div className="signin-general">
                     <h1 className="title">SIGN UP</h1>
                     <h6>Let's get you started.</h6>
-                    <button className="account-button">Student Account</button>
+                    <button className="account-button" onClick={navigateToSignUp}>Student Account</button>
                     <h5 className="cross">or</h5>
                     <button className="account-button">Business Account</button>
                     <h6 className="login">Already have an account? <span className="signin_link">Sign in</span> </h6>
