@@ -1,6 +1,6 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./css/Home.css";
-
 
 function Home() {
 
@@ -27,6 +27,12 @@ function Home() {
             setProjSelectedIndex(index);
         }
     };
+
+    let navigate = useNavigate();
+    const navigateToSignUp = () => {
+        let path = `/signup`;
+        navigate(path);
+    }
 
     var projectCategories = projectCategoryNames.map((item, index) => {
         if (index === 6) {
@@ -68,7 +74,7 @@ function Home() {
 
                 <div className="home-navbar-signin">
                     <span className="home-navbar-login">Log-In</span>
-                    <span className="home-navbar-signin">Sign Up</span>
+                    <span className="home-navbar-signin" onClick={navigateToSignUp}>Sign Up</span>
                 </div>
             </div>
 
@@ -94,13 +100,13 @@ function Home() {
                     </div>
                 </div>
 
-                <div style={{marginTop: -250, display: 'flex', alignItems:'center'}}>
-                    <img className="drawing1" style={{ width: 240, height: 200, marginLeft: 430, marginTop: 140}} src={drawing1} alt="" />
-                    <img className="drawing2" style={{ width: 950, marginTop: -160, height: 'auto', marginLeft: -100}} src={drawing2} alt="" />
-                    <img className="drawing3" style={{ width: 200, height: 420, marginLeft: -280}} src={drawing3} alt="" />
+                <div style={{ marginTop: -250, display: 'flex', alignItems: 'center' }}>
+                    <img className="drawing1" style={{ width: 240, height: 200, marginLeft: 430, marginTop: 140 }} src={drawing1} alt="" />
+                    <img className="drawing2" style={{ width: 950, marginTop: -160, height: 'auto', marginLeft: -100 }} src={drawing2} alt="" />
+                    <img className="drawing3" style={{ width: 200, height: 420, marginLeft: -280 }} src={drawing3} alt="" />
                 </div>
 
-                <div style={{width: '100%', height: 1, borderTop: '1px solid #2A4645', marginTop: -50}}></div>
+                <div style={{ width: '100%', height: 1, borderTop: '1px solid #2A4645', marginTop: -50 }}></div>
 
                 <div className="whatWeDo">
                     <div className="whatWeDo-sectionName">THE BREAKDOWN</div>

@@ -1,9 +1,23 @@
 import './StudentSignUp.css';
 import React, { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 import Clownfish from "../img/clownfish-logo.png";
 import Background from "../img/background.png";
 
 function StudentSignUp() {
+
+    let navigate = useNavigate();
+
+    const navigateToStudentHome = () => {
+        let path = `/jobListing`;
+        navigate(path);
+    }
+
+    const navigateBackToSignUp = () => {
+        let path = `/signup`;
+        navigate(path);
+    }
+
     return (
         <div className="splitScreen">
             <div className="topPane">
@@ -27,7 +41,7 @@ function StudentSignUp() {
                         <input className="input" type="password" placeholder="Password"/>
                         <h6 className="birthdate">Birth Date</h6>
                         <input className="input" type="date" placeholder="birthday"/>
-                        <button className="create-button">CREATE ACCOUNT</button>
+                        <button className="create-button" onClick={navigateToStudentHome}>CREATE ACCOUNT</button>
                     </form>
                 </div>
             </div>
@@ -39,7 +53,7 @@ function StudentSignUp() {
                     backgroundRepeat: 'no-repeat'
                 }}>
                 <div className="rightCorner-text">
-                    <h6>Not a student? <span className="signin_link">Back</span> </h6>
+                    <h6>Not a student? <span className="signin_link" onClick={navigateBackToSignUp}>Back</span> </h6>
                 </div>
                 <div className="rightText">
                     <h1 className="title">TELL US ABOUT YOURSELF</h1>
