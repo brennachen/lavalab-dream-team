@@ -148,7 +148,6 @@ function ApplicationPage() {
                                     <div className="rightButtons">
                                         <button className="button-applications">Resume</button>
                                         <button className="button-applications">Website</button>
-                                        <h6>Applied 4 days ago</h6>
                                     </div>
                                 </div>
                                 <h4>Desired Location</h4>
