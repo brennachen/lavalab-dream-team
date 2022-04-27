@@ -48,14 +48,18 @@
     color: black;
     width: 75%;
     height: 100vh;
-    border: 1px solid lightgray;
     display: flex;
     flex-direction: row;
 
-    border: 1px solid lightgray;
     border-top-color: 'lightgray';
     border-top-width: 1px;
     border-bottom-width: 0px;
+    margin-left: 362px;
+    margin-top: 210px;
+}
+
+.middlePane-jobs-hidden {
+    display: none;
 }
 
 .button-jobs {

@@ -10,6 +10,7 @@ import Messaging from "../img/messaging.png";
 import Pfp from "../img/Pfp.png";
 import Arrow from "../img/Arrow.png";
 import Modal from 'react-modal/lib/components/Modal';
+import Bottle from "../img/bottle.png";
 
 function JobListingPage() {
 
@@ -20,6 +21,11 @@ function JobListingPage() {
     var [isModalOpen, setIsModalOpen] = useState(false);
     var [isConnectedModalOpen, setIsConnectedModalOpen] = useState(false);
     var [isSubmitModalOpen, setIsSubmitModalOpen] = useState(false);
+    var [showStyle2, setShowStyle2] = useState("middlePane-jobs");
+    var [showStyle, setShowStyle] = useState("middlePane-jobs-hidden");
+    var [selectBox, setSelectBox] = useState("leftBox-selected");
+    var [selectBox2, setSelectBox2] = useState("leftBox");
+    
 
     const closeButton = require("./../img/close.png");
     const searchPic = require("./../img/search.png");
@@ -96,6 +102,20 @@ function JobListingPage() {
     function navigateToApplications() {
         let path = `/application`;
         navigate(path);
+    }
+
+    function showJob1() {
+        setShowStyle2("middlePane-jobs");
+        setShowStyle("middlePane-jobs-hidden");
+        setSelectBox("leftBox-selected");
+        setSelectBox2("leftBox")
+    }
+
+    function showJob2() {
+        setShowStyle("middlePane-jobs");
+        setShowStyle2("middlePane-jobs-hidden");
+        setSelectBox2("leftBox-selected");
+        setSelectBox("leftBox")
     }
 
     return (
@@ -329,7 +349,7 @@ function JobListingPage() {
             <SearchBar handleModal={handleModal}/>
             <div className="splitScreen-horizontal">
                 <div className="leftPane-jobs" style={{position: 'fixed', top: 215, overflowY: 'scroll', height: '100%'}}>
-                    <div className="leftBox">
+                    <div className={selectBox} onClick={showJob1}>
                         <div className="leftSide-jobs">
                             <h3>Data Analyst: Marketing Campaign</h3>
                             <h5>Nayad Bottle<br />Remote</h5>
@@ -338,7 +358,7 @@ function JobListingPage() {
                             <img className="heart" src={Heart} alt="logo"></img>
                         </div>
                     </div>
-                    <div className="leftBox-selected">
+                    <div className={selectBox2} onClick={showJob2}>
                         <div className="leftSide-jobs">
                             <h3>Software Engineer: Website Development</h3>
                             <h5>Dave's Coffee<br />Los Angeles, CA</h5>
@@ -375,7 +395,7 @@ function JobListingPage() {
                         </div>
                     </div>
                 </div>
-                <div className="middlePane-jobs" style={{marginLeft: 362, marginTop: 210}}>
+                <div className={showStyle} >
                     <div className="leftText-jobs">
                         <div className="company">
                             <div className="leftCompanyLogo">
@@ -386,7 +406,7 @@ function JobListingPage() {
                                 <h6>Study Lounge Cafe<br />Los Angeles, CA</h6>
                             </div>
                         </div>
-                        <h2 className="title-jobs">Software Engineer: Management System</h2>
+                        <h2 className="title-jobs">Software Engineer: Website Development</h2>
                         <h6>Dave’s coffee is looking for a developer to build a WIX website to handle online orders and display our menu.
                             <br /><br />We expect this project to be a ten-hour time committment over the span of two hours so it is finalized by June 24, 2022.</h6>
                         <h2>Preferred Qualifications</h2>
@@ -417,6 +437,51 @@ function JobListingPage() {
                             </div>
                         </div>
                     </div>
+                    
+                </div>
+                <div className={showStyle2}>
+                    <div className="leftText-jobs">
+                        <div className="company">
+                            <div className="leftCompanyLogo">
+                                <img className="coffeeLogo" src={Bottle} alt="logo"></img>
+                            </div>
+                            <div className="rightCompanyText-jobs">
+                                <h3>Nayad Bottle</h3>
+                                <h6>Watter bottle distributor<br />Virtual Position</h6>
+                            </div>
+                        </div>
+                        <h2 className="title-jobs">Data Analyst: Marketing Campaign</h2>
+                        <h6>Dave’s coffee is looking for a developer to build a WIX website to handle online orders and display our menu.
+                            <br /><br />We expect this project to be a ten-hour time committment over the span of two hours so it is finalized by June 24, 2022.</h6>
+                        <h2>Preferred Qualifications</h2>
+                        <ul>
+                            <li><h6>Must be currently enrolled in a college or university pursuing a Bachelor’s, Master’s, or PhD in a technical or engineering major related to work assignment</h6></li>
+                            <li><h6>Recently completed coursework providing an understanding and application of standard principles, theories, concepts and techniques in related work assignment</h6></li>
+                            <li><h6>Proficient in HTML/CSS/Javascript</h6></li>
+                        </ul>
+                        <button className="button-jobs" onClick={handleConnectedModal}>Get Connected</button>
+                   </div>
+                   <div className="rightText-jobs">
+                        <div className="box">
+                            <div className="text-jobs">
+                                <h3>Website</h3>
+                                <a href="https://nayadbottle/"><h6>https://nayadbottle/</h6></a>
+                                <h3>Location(s)</h3>
+                                <h6>Remote</h6>
+                                <h3>Time Commitment</h3>
+                                <h6>6 hours total</h6>
+                                <h3>Date Posted</h3>
+                                <h6>April 1, 2022</h6>
+                                <h3>Ideal Project Timeline</h3>
+                                <h6>Onboard: Early April<br />Execute: Through May</h6>
+                                <h3>Contact</h3>
+                                <h6>Joshua Wilson (Owner)
+                                    <br />Georga Garden (Head Designer)
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
