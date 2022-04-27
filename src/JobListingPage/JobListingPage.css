@@ -9,7 +9,7 @@
 }
 
 .leftPane-jobs {
-    width: 30%;
+    width: 25%;
     border: 1px solid lightgray;
     display: flex;
     flex-direction: column;
@@ -21,9 +21,21 @@
     padding: 0px 30px;
     display: flex;
     flex-direction: row;
+    cursor: pointer;
 }
 
-.leftSide {
+
+.leftBox-selected {
+    background-color: #F0F5F5;
+    border-bottom: 1px solid lightgray;
+    text-align: left;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.leftSide-jobs {
     width: 80%;
 }
 
@@ -34,7 +46,7 @@
 .middlePane-jobs {
     background-color: white;
     color: black;
-    width: 70%;
+    width: 75%;
     height: 100vh;
     border: 1px solid lightgray;
     display: flex;
@@ -49,21 +61,21 @@
 .button-jobs {
     background-color: #D96F03;
     color: white;
-    ;
     border: none;
-    font-size: 15px;
+    font-size: 13px;
     padding: 20px 50px;
     width: 50%;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 20px;
     margin-left: 25px;
-    font-size: 20px;
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
 .leftText-jobs {
     padding-top: 10px;
-    width: 60%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
@@ -73,7 +85,7 @@
 }
 
 .leftText-jobs h6 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 30px;
     margin-top: 0px;
@@ -82,13 +94,13 @@
 
 .leftText-jobs h2 {
     margin-top: 40px;
-    font-size: 30px;
+    font-size: 31px;
 }
 
 .rightText-jobs {
     margin-top: 0px;
     padding-top: 10px;
-    width: 40%;
+    width: 30%;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
@@ -128,14 +140,14 @@ ul {
     margin-top: 5px;
     font-style: bold;
     line-height: 30px;
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
 .text-jobs h6 {
     margin-top: 5px;
     line-height: 25px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     margin-bottom: 30px;
 }
@@ -167,29 +179,31 @@ ul {
     line-height: 0px;
     padding: 0px;
     margin-bottom: 0px;
-    font-size: 30px;
+    font-size: 28px;
 }
 
 .rightCompanyText-jobs h6 {
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 25px;
 }
 
 .title-jobs {
-    font-size: 40px;
+    font-size: 33px;
     line-height: 100%;
 }
 
-.leftSide h3 {
-    font-size: 25px;
+.leftSide-jobs h3 {
+    margin-left: 10px;
+    font-size: 22px;
 }
 
-.leftSide h6 {
+.leftSide-jobs h5 {
+    margin-left: 10px;
     margin-top: 0px;
-    font-size: 20px;
-    font-weight: 300;
+    font-size: 18px;
+    font-weight: 200;
 }
 
 .inputBar {
@@ -220,7 +234,7 @@ ul {
     font-family: Mulish;
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 25px;
     display: flex;
     align-items: center;
@@ -231,7 +245,7 @@ ul {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 13px;
     line-height: 29px;
     display: flex;
     align-items: center;

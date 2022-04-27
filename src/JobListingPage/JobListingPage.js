@@ -329,52 +329,52 @@ function JobListingPage() {
             <div className="splitScreen-horizontal">
                 <div className="leftPane-jobs" style={{position: 'fixed', top: 215, overflowY: 'scroll', height: '100%'}}>
                     <div className="leftBox">
-                        <div className="leftSide">
-                            <h3>Software Engineer: Website Development</h3>
-                            <h6>Dave's Coffee<br />Los Angeles, CA</h6>
-                        </div>
-                        <div className="rightSide">
-                            <img className="heart" src={Heart} alt="logo"></img>
-                        </div>
-                    </div>
-                    <div className="leftBox">
-                        <div className="leftSide">
+                        <div className="leftSide-jobs">
                             <h3>Data Analyst: Marketing Campaign</h3>
-                            <h6>Nayad Bottle<br />Remote</h6>
+                            <h5>Nayad Bottle<br />Remote</h5>
+                        </div>
+                        <div className="rightSide">
+                            <img className="heart" src={Heart} alt="logo"></img>
+                        </div>
+                    </div>
+                    <div className="leftBox-selected">
+                        <div className="leftSide-jobs">
+                            <h3>Software Engineer: Website Development</h3>
+                            <h5>Dave's Coffee<br />Los Angeles, CA</h5>
                         </div>
                         <div className="rightSide">
                             <img className="heart" src={Heart} alt="logo"></img>
                         </div>
                     </div>
                     <div className="leftBox">
-                        <div className="leftSide">
+                        <div className="leftSide-jobs">
                             <h3>Front-end Engineer: Management System</h3>
-                            <h6>Plural Site<br />Remote/LA</h6>
+                            <h5>Plural Site<br />Remote/LA</h5>
                         </div>
                         <div className="rightSide">
                             <img className="heart" src={Heart} alt="logo"></img>
                         </div>
                     </div>
                     <div className="leftBox">
-                        <div className="leftSide">
+                        <div className="leftSide-jobs">
                             <h3>Full-stack Engineer: Website Development</h3>
-                            <h6>Lorenzo<br />Remote</h6>
+                            <h5>Lorenzo<br />Remote</h5>
                         </div>
                         <div className="rightSide">
                             <img className="heart" src={Heart} alt="logo"></img>
                         </div>
                     </div>
                     <div className="leftBox">
-                        <div className="leftSide">
+                        <div className="leftSide-jobs">
                             <h3>Back-end Engineer: Website Development</h3>
-                            <h6>Lorenzo<br />Remote</h6>
+                            <h5>Lorenzo<br />Remote</h5>
                         </div>
                         <div className="rightSide">
                             <img className="heart" src={Heart} alt="logo"></img>
                         </div>
                     </div>
                 </div>
-                <div className="middlePane-jobs" style={{marginLeft: 433, marginTop: 210}}>
+                <div className="middlePane-jobs" style={{marginLeft: 362, marginTop: 210}}>
                     <div className="leftText-jobs">
                         <div className="company">
                             <div className="leftCompanyLogo">
