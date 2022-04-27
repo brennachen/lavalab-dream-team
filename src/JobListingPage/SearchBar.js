@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./SearchBar.css";
 
 function SearchBar(props) {
@@ -7,8 +7,11 @@ function SearchBar(props) {
     const searchPic = require("./../img/search.png");
     const pickerPic = require("./../img/picker.png");
 
+    const [isChosen, setIsChosen] = useState(false);
+
     function handleModal() {
         props.handleModal();
+        setIsChosen(true);
     }
 
     return (
@@ -16,15 +19,19 @@ function SearchBar(props) {
             <div className="searchBar">
                 <div className="inputBar">
                     <img className="searchPic" src={searchPic} alt="" />
-                    <input className="input" placeholder="Find your project"/>
+                    <input className="input" placeholder="Find your project" />
                 </div>
                 <div className="filter" onClick={handleModal}>
                     <img className="filterPic" src={filterPic} alt="" />
                     <div className="filterText">Filters</div>
                 </div>
-                <div className="otherFilters">Location</div>
-                <div className="otherFilters">Pay</div>
-                <div className="otherFilters">Key Terms</div>
+                {isChosen && (
+                    <div style={{display: 'flex'}}>
+                        <div className="otherFilters" >Location</div>
+                        <div className="otherFilters">Required Experience</div>
+                        <div className="otherFilters">Compensation</div>
+                    </div>
+                )}
             </div>
             <div className="resultBar">
                 <div className="resultNum">148 Results</div>

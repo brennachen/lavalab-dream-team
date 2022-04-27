@@ -239,6 +239,10 @@ function JobListingPage() {
                                             <input type="checkbox" className="modal-text-text" />
                                             <label style={{ marginLeft: 5 }}>5+ years</label>
                                         </div>
+                                        <div style={{ display: 'flex', marginBottom: -5 }} className="modal-text-text">
+                                            <input type="checkbox" className="modal-text-text" />
+                                            <label style={{ marginLeft: 5 }}>10+ years</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -250,21 +254,21 @@ function JobListingPage() {
                                     <div className="modal-text">
                                         <div style={{ display: 'flex' }} className="modal-text-text">
                                             <input type="checkbox" className="modal-text-text" />
-                                            <label style={{ marginLeft: 5 }}>Short-term   1-5hours</label>
+                                            <label style={{ marginLeft: 5 }}>Short-term<span style={{color: '#2B4F4A', marginLeft: 10}}>1-5 hours</span></label>
                                         </div>
                                         <div style={{ display: 'flex' }} className="modal-text-text">
                                             <input type="checkbox" className="modal-text-text" />
-                                            <label style={{ marginLeft: 5 }}>Mid-term   5-10hours</label>
+                                            <label style={{ marginLeft: 5 }}>Mid-term<span style={{color: '#2B4F4A', marginLeft: 10}}>5-10 hours</span></label>
                                         </div>
                                         <div style={{ display: 'flex' }} className="modal-text-text">
                                             <input type="checkbox" className="modal-text-text" />
-                                            <label style={{ marginLeft: 5 }}>Long-term   10-20hours</label>
+                                            <label style={{ marginLeft: 5 }}>Long-term<span style={{color: '#2B4F4A', marginLeft: 10}}>10-20 hours</span></label>
                                         </div>
                                         <div style={{ display: 'flex' }} className="modal-text-text">
                                             <input type="checkbox" className="modal-text-text" />
-                                            <label style={{ marginLeft: 5 }}>Full-term   20+hours</label>
+                                            <label style={{ marginLeft: 5 }}>Full-term<span style={{color: '#2B4F4A', marginLeft: 10}}>20+ hours</span></label>
                                         </div>
-                                        <div style={{ display: 'flex' }} className="modal-text-text">
+                                        <div style={{ display: 'flex', marginTop: 5 }} className="modal-text-text">
                                             <label style={{ marginLeft: 5, color: '#2B4F4A' }}>+ add your own preference</label>
                                         </div>
                                     </div>
@@ -290,7 +294,7 @@ function JobListingPage() {
                                             <input type="checkbox" className="modal-text-text" />
                                             <label style={{ marginLeft: 5 }}>20-40 an hour</label>
                                         </div>
-                                        <div style={{ display: 'flex' }} className="modal-text-text">
+                                        <div style={{ display: 'flex', marginTop: 5 }} className="modal-text-text">
                                             <label style={{ marginLeft: 5, color: '#2B4F4A' }}>+ add your own range</label>
                                         </div>
                                     </div>
@@ -301,20 +305,20 @@ function JobListingPage() {
                 </div>
             </Modal>
 
-            <div className="topnav">
+            <div className="topnav" style={{position: 'fixed', width: '100%'}}>
                 <img className="clownfish-logo" src={Clownfish} alt="logo"></img>
-                <div class="topnav-right">
+                <div className="topnav-right">
                     <a href="#home">Projects</a>
-                    <a class="active" href="#applied">Applied</a>
+                    <a className="active" href="#applied">Applied</a>
                     <a href="#loved">Loved</a>
                     <img className="img-messaging" src={Messaging} alt="logo"></img>
                     <img className="img-pfp" src={Pfp} alt="logo"></img>
                     <img className="img-arrow" src={Arrow} alt="logo"></img>
                 </div>
             </div>
-            <SearchBar handleModal={handleModal} />
+            <SearchBar handleModal={handleModal}/>
             <div className="splitScreen-horizontal">
-                <div className="leftPane-jobs">
+                <div className="leftPane-jobs" style={{position: 'fixed', top: 215, overflowY: 'scroll', height: '100%'}}>
                     <div className="leftBox">
                         <div className="leftSide">
                             <h3>Software Engineer: Website Development</h3>
@@ -361,7 +365,7 @@ function JobListingPage() {
                         </div>
                     </div>
                 </div>
-                <div className="middlePane-jobs">
+                <div className="middlePane-jobs" style={{marginLeft: 433, marginTop: 210}}>
                     <div className="leftText-jobs">
                         <div className="company">
                             <div className="leftCompanyLogo">
@@ -381,15 +385,9 @@ function JobListingPage() {
                             <li><h6>Recently completed coursework providing an understanding and application of standard principles, theories, concepts and techniques in related work assignment</h6></li>
                             <li><h6>Proficient in HTML/CSS/Javascript</h6></li>
                         </ul>
-<<<<<<< HEAD
-                        <button className="button-jobs">Get Connected</button>
+                        <button className="button-jobs" onClick={handleConnectedModal}>Get Connected</button>
                    </div>
                    <div className="rightText-jobs">
-=======
-                        <button className="button" onClick={handleConnectedModal}>Get Connected</button>
-                    </div>
-                    <div className="rightText">
->>>>>>> 6de44ec64f335218deb544ab805152eba5546aca
                         <div className="box">
                             <div className="text-jobs">
                                 <h3>Website</h3>
