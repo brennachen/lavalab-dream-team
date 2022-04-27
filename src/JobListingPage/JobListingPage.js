@@ -1,5 +1,6 @@
 import './JobListingPage.css';
 import './Modal.css';
+import { useNavigate } from "react-router-dom";
 import React, { useState } from 'react';
 import Heart from "../img/heart.png";
 import CoffeeLogo from "../img/Coffee Logo.png";
@@ -85,8 +86,16 @@ function JobListingPage() {
         setIsSubmitModalOpen(true);
     }
 
+    let navigate = useNavigate();
     function closeSubmitModal() {
         setIsSubmitModalOpen(false);
+        let path = `/application`;
+        navigate(path);
+    }
+
+    function navigateToApplications() {
+        let path = `/application`;
+        navigate(path);
     }
 
     return (
@@ -305,15 +314,15 @@ function JobListingPage() {
                 </div>
             </Modal>
 
-            <div className="topnav" style={{position: 'fixed', width: '100%'}}>
+            <div className="topnav" style={{position: 'fixed', width: '100%', paddingTop: 5}}>
                 <img className="clownfish-logo" src={Clownfish} alt="logo"></img>
-                <div className="topnav-right">
-                    <a href="#home">Projects</a>
-                    <a className="active" href="#applied">Applied</a>
-                    <a href="#loved">Loved</a>
-                    <img className="img-messaging" src={Messaging} alt="logo"></img>
-                    <img className="img-pfp" src={Pfp} alt="logo"></img>
-                    <img className="img-arrow" src={Arrow} alt="logo"></img>
+                <div className="topnav-right" style={{alignItems: 'center', display: 'flex', paddingTop: 8}}>
+                    <div style={{borderBottom: '3px solid #D96F03', paddingTop: 3}}>Projects</div>
+                    <div style={{marginLeft: 30}} onClick={navigateToApplications}>Applied</div>
+                    <div style={{marginLeft: 30}}>Loved</div>
+                    <img style={{width: 30, marginLeft: 30}} src={Messaging} alt="logo"></img>
+                    <img className="img-pfp" style={{paddingLeft: 20, paddingTop: 0}} src={Pfp} alt="logo"></img>
+                    <img style={{paddgingTop: 20, width: 20, paddingRight: 20}}src={Arrow} alt="logo"></img>
                 </div>
             </div>
             <SearchBar handleModal={handleModal}/>

@@ -1,7 +1,8 @@
 .topBar {
   width: 100%;
   top: 60px;
-  border-top: 1px solid #808080;
+  border-top: 0.5px solid #808080;
+  border-bottom: 0.5px solid #808080;
   position: fixed;
   background: #ffffff;
   padding-top: 20px;
