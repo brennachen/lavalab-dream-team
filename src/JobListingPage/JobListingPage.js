@@ -311,6 +311,7 @@ function JobListingPage() {
                             </div>
                         </div>
                     </div>
+                    <div className='modal-apply' onClick={handleModal}>Apply</div>
                 </div>
             </Modal>
 

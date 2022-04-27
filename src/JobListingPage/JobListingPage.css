@@ -297,3 +297,22 @@ ul {
     text-align: center;
     line-height: 25px;
 }
+
+.modal-apply {
+    background: #D96F03;
+    border-radius: 6px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 26px;
+
+    color: #FFFFFF;
+    text-align: center;
+    width: 100px;
+    margin-top: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+
+    margin-left: 83%;
+}
